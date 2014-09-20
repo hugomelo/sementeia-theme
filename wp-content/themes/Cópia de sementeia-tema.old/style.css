@@ -1,0 +1,177 @@
+/*
+
+Theme Name: Sementeia
+Description: Portal Sementeia
+Author: Emerson Moraes;
+Version: 1.0
+
+*/
+
+*{margin: 0 auto; padding: 0;}
+body{ background: #069; font: arial, tahoma, verdana; width: 100%; text-align: center;}
+body.home{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial.png') no-repeat; background-position: top center; }
+#body-sementeia{background: url('images/background_sementeial2.png') no-repeat; background-position: top center;}
+#body-resistencia{background: url('images/background_sementeial3.png') no-repeat; background-position: top center;}
+#body-sementes{background: url('images/background_sementeial4.png') no-repeat; background-position: top center;}
+#body-agenda{background: url('images/background_sementeial7.png') no-repeat; background-position: top center;}
+#body-contato{background: url('images/background_sementeial8.png') no-repeat; background-position: top center;}
+#body-categorias-sementes{background: url('images/background_sementeial5.png') no-repeat; background-position: top center;}
+
+
+#header{ width: 1024px; height: 76px; }
+#header-sementeia{ width: 1024px; height: 76px;}
+#header-resistencia{ width: 1024px; height: 76px; }
+#header-contato{ width: 1024px; height: 76px; }
+#header-sementes{ width: 1024px; height: 76px; }
+#header-agenda{ width: 1024px; height: 76px; }
+
+#header .header-content{ width:1024px; height: 0px; background: #fff; float: left; margin: 0 auto;}
+#header-content{ width:1024px; height: 0px; background: #fff; float: left; margin: 0 auto;}
+.hearder-logo{width: 96px; height: 96px;  background: url('images/sementeia_logo.jpg') no-repeat; 
+			  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+			  margin: 36px 0px 0px 36px; float: left;}
+
+
+/*HOME*/
+#header .header-content-login{ width: 892px; height: 24; background: transparent; float: left;}
+#header .header-login{width: 50px; height: 34px; float: left; background: url('images/bt_login.png') no-repeat; margin: 0px 0px 0px 846px; }
+
+#header .header-menu {width: 620px; height: 34px; float: left; margin: 0px 0px 0px 272px}
+#header .header-paginas{ float: left; height: 30px; margin: 0px 0px 0px -30px;}
+#header .header-paginas ul{ margin: 0; padding: 0px; list-style: none; }
+#header .header-paginas ul li{ float: left;}
+#header .header-paginas ul li a { text-decoration: none; padding: 0px 0px 0px 50px; display: block; float: left; margin: 0px 0px ; }
+
+#container{ width: 1024px; height: 670px; }
+#container .conteudo-home {width: 952px; height: 660px; ;border-bottom: 10px solid; ;border-bottom-color: #000;}
+
+#image-post{ width: 360px; height: 360px; float: left; }
+#image-post .redondo{ border: none;border-radius: 50%;width: 360px;height: 360px;}
+
+#circulo-esquerda{ background: #e1e1e1; border-radius:100%; width:174px; height:174px; float: right; margin: 30px 62px 0px 0px;}
+
+#teste{ width: 580px; height: 174px; float: left;}
+#circulo-direita{ background: #e1e1e1; border-radius:100%; width:174px; height:174px; float: left; margin: 0px 0px 0px 80px;}
+
+#teste2{ width: 250px; height: 250px; background: #e1e1e1; float: left;margin: -150px 0px 0px 0px;}
+#content-agenda-home{ width: 250px; height: 250px; float: left;}
+
+
+/*SEMENTEIA*/
+
+#header-sementeia .logo-sementeia{width: 96px; height: 96px;  background: url('images/sementeia_logo.jpg') no-repeat; 
+			  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+			  margin: 36px 10px 0px 36px; float: left;}
+
+.menu{width: 620px; height: 36px;float: left; margin: 0px 0px 0px 272px}
+.paginas{ float: left; height: 30px; margin: 0px 0px 0px -30px;}
+.paginas ul{ margin: 0; padding: 0px; list-style: none; }
+.paginas ul li{ float: left;}
+.paginas ul li a { text-decoration: none; padding: 0px 0px 0px 50px; display: block; float: left; margin: 0px 0px; }
+
+.titulo{text-decoration: none; }
+
+
+#header-sementeia .orientacao-sementeia {width: 80px; height: 20px; float: left; background: #000; margin: 0px 0px 0px 290px;margin-bottom: 14px; } 
+#header-resistencia .orientacao-resistencia{width: 110px; height: 20px; float: left; background: #000; margin: 0px 0px 0px 415px;margin-bottom: 14px; }
+#header-sementes .orientacao-sementes {width: 75px; height: 20px; float: left; background: #000; margin: 0px 0px 0px 570px;margin-bottom: 14px; }
+#header-agenda .orientacao-agenda {width: 60px; height: 20px; float: left; background: #000; margin: 0px 0px 0px 690px;margin-bottom: 14px; }
+#header-contato .orientacao-contato {width: 65px; height: 20px; float: left; background: #000; margin: 0px 0px 0px 797px;margin-bottom: 14px; }
+
+#body-sementeia .content{width:1024px; height: 765px; background: transparent; }
+#body-sementeia .conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+					border-bottom: 10px solid; ;border-bottom-color: #000; background: transparent;}
+#body-sementeia .conteudo-titulo{ width:952px; height: 100px; background: #054;}					
+#body-sementeia .imagem-circulo{ width:402px; height: 550px; background: #024; float: left;}
+#body-sementeia .conteudo-texto{width:402px; height: 550px; background: #a25; float: left; margin: 0px 0px 0px 80px;}
+#body-sementeia .titulo{text-decoration: none;}
+
+
+#body-resistencia .content{width:1024px; height: 765px; background: transparent; }
+#body-resistencia .conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+					   background: transparent;}
+#body-resistencia .conteudo-texto{width:563px; height: 550px; background: #a25; float: left; margin: 0px 0px 0px 161px;}
+
+#body-sementes .content{width:1024px; height: 765px; background: transparent; }
+#body-sementes .conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+					border-bottom: 10px solid; ;border-bottom-color: #000; background: transparent;}						
+
+#body-sementes .conteudo-titulo{ width:322px; height: 80px; background: #054;  margin:0px 0px 0px 80px; }					
+#body-sementes .imagem-circulo{ width:402px; height: 350px; background: #024;  margin:0px 0px 0px 80px;}
+#body-sementes .conteudo-texto{width:550px; height: 250px; background: #a25;  margin: 0px 0px 0px 161px;}
+#body-sementes .titulo{text-decoration: none;}
+#body-sementes .conteudo-categorias{ width:173px; height: 500px; background: #e1e1e1; float: right; text-decoration: none;}
+#body-sementes .sidebar{text-decoration: none}
+
+#body-resistencia .conteudo-titulo{ width:952px; height: 100px; background: red;}
+
+#body-agenda .content{width:1024px; height: 765px; background: transparent; }
+#body-agenda .conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+					 background: transparent;}
+#body-agenda .conteudo-titulo{ width:952px; height: 50px; background: #054;}					
+#body-agenda .conteudo-texto{width:550px; height: 650px; background: #a25; float: left; margin: 0px 0px 0px 160px;}
+#body-agenda .titulo{text-decoration: none;}
+
+
+#body-categorias-sementes .content{width:1024px; height: 765px; background: transparent; }
+#body-categorias-sementes .conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+					border-bottom: 10px solid; ;border-bottom-color: #000; background: transparent;}
+
+#body-categorias-sementes .conteudo-titulo{ width:952px; height: 80px; background: red;}					
+#body-categorias-sementes .conteudo-texto{width:550px; height: 200px; background: #a25;  margin: 0px 0px 0px 161px;}
+#body-categorias-sementes .conteudo-post{width:550px; height: 200px; background: #aaa;  margin: 0px 0px 0px 161px;}
+#body-categorias-sementes .titulo{text-decoration: none;}
+#body-categorias-sementes .conteudo-categorias{ width:173px; height: 500px; background: #e1e1e1; float: right; text-decoration: none;}
+#body-categorias-sementes .sidebar{text-decoration: none}
+.sidebar li{text-decoration: none; padding: 0px 0px 0px 20px; display: block; float: left; margin: 0px 0px; }
+.sidebar li a{text-decoration: none;}
+.conteudo-post li {text-decoration: none;}
+
+
+
+
+#body-contato .content{width:1024px; height: 765px; background: transparent; }
+#body-contato .conteudo{ width:310px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
+  				   background: transparent;}
+#body-contato .conteudo-titulo{ width:310px; height: 50px; background: red; margin: 0px 0px 0px 565px;}
+#body-contato .conteudo-texto{width:310px; height: 350px; background: #a25; float: left; margin: 0px 0px 0px 565px;border-bottom: 8px solid; ;border-bottom-color: #000;}
+
+
+.circle-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.category-div .circle-description {
+  display:none;
+  position: relative;
+  left: -150px;
+  top: -50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+.category-div:hover .circle-description {
+  display: block;
+}
+					
+
+/*
+#resistencia-conteudo{ width:952px; height: 765px; ; margin: 0 auto; margin: 60px 0px 0px 36px;}
+#resistencia-imagem-titulo{ width:952px; height: 100px; background: #054;}					
+#resistencia-conteudo-texto{width:563px; height: 550px; background: #a25; float: left; margin: 0px 0px 0px 161px;}
+
+#content-agenda{ width:1024px; height: 700px; }
+#agenda-conteudo{ width:952px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px;}
+#agenda-imagem-titulo{ width:952px; height: 100px; background: #054;}					
+#agenda-conteudo-texto{width:563px; height: 550px; background: #a25; float: left; margin: 0px 0px 0px 161px;}
+
+*/
+#footer{ width:952px; height: 100px; background: transparent;}
+
+
+
