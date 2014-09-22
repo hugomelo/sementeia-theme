@@ -3,10 +3,9 @@
 <?php $id_agenda=get_cat_ID('agenda');?>
 <?php $id_circle_images=get_cat_ID('circle-images');?>
 
-
 <?php
 
-$skipList = array('agenda', 'destaques');
+$skipList = array('agenda','destaques');
 
 $cats = get_categories();
 foreach($cats as $cat) {

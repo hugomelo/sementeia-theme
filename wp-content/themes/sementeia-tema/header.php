@@ -5,6 +5,7 @@
 	<title><?php wp_title('-',true,right); bloginfo() ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/style.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url')?>/js/sementeia.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <?php wp_head();?>
 </head>
@@ -22,6 +23,7 @@ elseif(is_category("agenda") || in_category("agenda"))
 else
 	$class = "sementes";
 ?>
+
 <body <?php body_class( $class ); ?>>
 <div id="header">
 	<div class="header-content"></div>
