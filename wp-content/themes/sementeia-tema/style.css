@@ -121,16 +121,12 @@ body.categorias-sementes .sidebar{text-decoration: none}
 .sidebar li a{text-decoration: none;}
 .conteudo-post li {text-decoration: none;}
 
-
-
-
-body.contato .content{width:1024px; height: 765px; background: transparent; }
-body.contato .conteudo{ width:310px; height: 765px;  margin: 0 auto; margin: 60px 0px 0px 36px; 
-  				   background: transparent;}
-body.contato .conteudo-titulo{ width:310px; height: 50px; background: red; margin: 0px 0px 0px 565px;}
-body.contato .conteudo-texto{width:310px; height: 350px; background: #a25; float: left; margin: 0px 0px 0px 565px;border-bottom: 8px solid; ;border-bottom-color: #000;}
-
-
+body.contato .content{width:1024px; height: 765px;  }
+body.contato .conteudo{ width:310px; height: 765px;  margin: 0 auto; margin: 0px 0px 0px 36px;}
+body.contato .conteudo-titulo{ width:310px; height: 50px; margin: 25px 0px 0px 550px; float: left;}
+body.contato .titulo {width:180px; height: 40px; background: url('images/bt_contato.png') no-repeat; background-size: contain; float: left;}
+body.contato .conteudo-texto p{margin: 40px 5px; text-align: justify;}
+body.contato .conteudo-texto{width:310px; float: left; margin: 0px 0px 0px 550px;border-bottom: 8px solid; border-bottom-color: #000;}
 
 body.sementeia .circle-image {
   width: 322px;
@@ -141,7 +137,7 @@ body.sementeia .circle-image {
 }
 
 
-.circle-image {
+ .circle-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;

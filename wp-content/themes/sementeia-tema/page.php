@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<?php
+if(is_page('movimentos-de-resistencia'))
+ 	$class="resistencia";
+?>
+
 <div class="content">
  
 	<div class="conteudo">
@@ -24,40 +29,46 @@
 		<div class="conteudo-categorias">
 			 
 		</div>
-		<div class="imagem-circulo">
-			
-		<div class="circle-image">
+				<!--<img src="<?php echo $url;?>"/>;-->	
 
-						<?php
-						$p = get_page_by_path('circle-images','ARRAY_A');
-						$attachments = get_children( array('post_parent' => $p
-							->ID,
-						'post_type' => 'attachment', 'post_mime_type' =>'image') );
-						
-						
-						$n = rand(0,count($attachments)-1);
-						$k = array_keys($attachments);
-						
-						$url = wp_get_attachment_url( $attachments[$k[$n]]->ID);
-						
-						?>
-						<img src="<?php echo $url; ?>" />					
-					</div>
-
+							<?php 
+								if(is_page('sementeia')){
+											echo "<div class=".'"imagem-circulo"'.">";
+												echo "<div class=".'"circle-image"'.">";
+													
+															$p = get_page_by_path('circle-images','ARRAY_A');
+															$attachments = get_children( array('post_parent' => $p
+																->ID,
+															'post_type' => 'attachment', 'post_mime_type' =>'image') );
+															$n = rand(0,count($attachments)-1);
+															$k = array_keys($attachments);
+															$url = wp_get_attachment_url( $attachments[$k[$n]]->ID);
+														
+															printf ('<img src="%s"/>',$url);
+								
+												echo "</div>";
+											echo "</div>";
+							}?>
 					
-		</div>
-
 
 		<div class="conteudo-texto">
 					<div class="texto">
-							
-							<?php if (have_posts()): while (have_posts()) : the_post();?>
+						<?php if(is_page('sementeia')){	
+							if (have_posts()): while (have_posts()) : the_post();
+							the_content();
+							endwhile; else:
+							endif;
+						}?>
+						<?php if(is_page('contato')){	
+							if (have_posts()): while (have_posts()) : the_post();
+							the_content();
+							endwhile; else:
+							endif;
+						}?>	
 
-							<?php the_content();?>
 
-						
-							<?php endwhile; else:?>
-							<?php endif;?>-->
+
+
 					</div>
 		</div>
 		
