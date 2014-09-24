@@ -1,40 +1,42 @@
-<?php
-/**
- * The template for displaying Category pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<div class="content">
+ 
+	<div class="conteudo">
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div class="conteudo-titulo">
 
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
+				<div class="titulo">
 
-				<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
+				</div>
+		</div>
+	
+	<div class="conteudo-postagem">
+	
+	<ul>
+		<li>
+			
+				
+				<?php if (have_posts()): while (have_posts()) : the_post();?>
+				<a href="<?php echo get_permalink();?>"><?php the_title(); ?></a>
+				<?php the_excerpt();?>
+				<?php endwhile; else:?>
 				<?php endif; ?>
-			</header><!-- .archive-header -->
+			
+		</li>
+	</ul>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+	</div>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		
 
-<?php get_footer(); ?>
+
+
+
+
+
+
+	</div>
+</div>

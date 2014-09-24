@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <?php
-if(is_page('movimentos-de-resistencia'))
- 	$class="resistencia";
+/*-if(is_page('movimentos-de-resistencia'))
+ 	$class="resistencia";*/
 ?>
 
 <div class="content">
@@ -32,7 +32,7 @@ if(is_page('movimentos-de-resistencia'))
 				<!--<img src="<?php echo $url;?>"/>;-->	
 
 							<?php 
-								if(is_page('sementeia')){
+								if(is_page('sementeia')||is_page('sementes')){
 											echo "<div class=".'"imagem-circulo"'.">";
 												echo "<div class=".'"circle-image"'.">";
 													
@@ -54,17 +54,31 @@ if(is_page('movimentos-de-resistencia'))
 		<div class="conteudo-texto">
 					<div class="texto">
 						<?php if(is_page('sementeia')){	
-							if (have_posts()): while (have_posts()) : the_post();
-							the_content();
-							endwhile; else:
-							endif;
-						}?>
-						<?php if(is_page('contato')){	
-							if (have_posts()): while (have_posts()) : the_post();
-							the_content();
-							endwhile; else:
-							endif;
-						}?>	
+														if (have_posts()): while (have_posts()) : the_post();
+														the_content();
+														endwhile; else:
+														endif;
+													}
+							if(is_page('contato')){	
+														if (have_posts()): while (have_posts()) : the_post();
+														the_content();
+														endwhile; else:
+														endif;
+													}
+							if(is_page('movimentos-de-resistencia')){
+														if (have_posts()): while (have_posts()) : the_post();
+														the_content();
+														endwhile; else:
+														endif;
+													}
+							if(is_page('sementes')){
+														if (have_posts()): while (have_posts()) : the_post();
+														the_content();
+														endwhile; else:
+														endif;
+													}
+									
+						?>	
 
 
 
