@@ -1,5 +1,6 @@
 <div class="sidebar">
 
+
 <?php $id_agenda=get_cat_ID('agenda');?>
 <?php $id_circle_images=get_cat_ID('circle-images');?>
 

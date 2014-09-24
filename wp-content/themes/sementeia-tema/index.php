@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div id="container">
 		<div class="conteudo-home">
 			<div class="content">

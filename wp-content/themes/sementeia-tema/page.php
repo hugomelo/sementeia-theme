@@ -49,8 +49,7 @@
 												echo "</div>";
 											echo "</div>";
 							}?>
-					
-
+				
 		<div class="conteudo-texto">
 					<div class="texto">
 						<?php if(is_page('sementeia')){	

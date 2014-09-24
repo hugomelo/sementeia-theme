@@ -22,7 +22,6 @@
 				<?php the_excerpt();?>
 				<?php endwhile; else:?>
 				<?php endif; ?>
-			
 		</li>
 	</ul>
 

@@ -23,7 +23,6 @@ elseif(is_category("agenda") || in_category("agenda"))
 else
 	$class = "sementes";
 ?>
-
 <body <?php body_class( $class ); ?>>
 <div id="header">
 	<div class="header-content"></div>

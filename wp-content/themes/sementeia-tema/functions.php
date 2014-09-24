@@ -500,5 +500,6 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 
 function custom_excerpt_length($length) {
 	return 13;
+	
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
