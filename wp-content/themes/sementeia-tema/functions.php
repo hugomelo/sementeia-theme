@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Twenty Twelve functions and definitions
