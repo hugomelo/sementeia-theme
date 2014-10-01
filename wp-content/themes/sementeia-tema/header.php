@@ -3,8 +3,14 @@
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<title><?php wp_title('-',true,right); bloginfo() ?></title>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/style.css"/>
+	
 	<script type="text/javascript" src="<?php bloginfo('template_url')?>/js/sementeia.js"></script>
+	<script type="text/javascript" src="shapewrapper.js"></script>
+	
+
+
+
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <?php wp_head();?>
@@ -16,22 +22,29 @@ elseif(is_page('sementeia'))
  	$class="sementeia";
 elseif(is_page('contato'))
  	$class="contato";
- elseif(is_page('movimentos-de-resistencia'))
+elseif(is_page('movimentos-de-resistencia'))
 	$class="resistencia";
 elseif(is_category("agenda") || in_category("agenda"))
 	$class = "agenda";
-else
-	$class = "sementes";
+elseif(is_page('sementes'))
+	$class ="sementes";
+elseif(!is_category("agenda"))
+	$class ="categorias-sementes";
+elseif (!is_category("agenda")&&is_tag()){
+	$class ="categorias-sementes";
+}
+
 ?>
 <body <?php body_class( $class ); ?>>
 <div id="header">
 	<div class="header-content"></div>
-					<div class="hearder-logo">
+					<div class="hearder-logo" >
 					
 									
 					</div> <!--fim do header-logo-->
 					
 					<div class="header-content-login">
+							
 					
 						<div class="header-login">
 						
@@ -73,7 +86,7 @@ else
 	</div><!--fim do header-content-->
 
 </div><!--fim do header-->
-
+<div class=clear></div>
 
 
 

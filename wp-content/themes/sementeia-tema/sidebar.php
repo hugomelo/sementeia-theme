@@ -1,14 +1,7 @@
 
 <div class="sidebar">
-
-
-<?php $id_agenda=get_cat_ID('agenda');?>
-<?php $id_circle_images=get_cat_ID('circle-images');?>
-
 <?php
-
 $skipList = array('agenda','destaques');
-
 $cats = get_categories();
 foreach($cats as $cat) {
 	if (in_array($cat->slug, $skipList)) 
@@ -23,7 +16,6 @@ foreach($cats as $cat) {
  echo "</div>";
 }
 //wp_list_categories( $args );
-
 ?> 
 
 </div> <!--fim do sidebar-->

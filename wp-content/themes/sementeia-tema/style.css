@@ -18,7 +18,8 @@ body.sementes{background: url('/wp-content/themes/sementeia-tema/images/backgrou
 body.agenda{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial7.png') no-repeat; background-position: top center;}
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
 body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial5.png') no-repeat; background-position: top center;}
-
+body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
+body.archive {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
 
 #header{ width: 1024px; height: 76px; }
 
@@ -42,14 +43,21 @@ body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/imag
 
 #container{ width: 1024px; height: 670px; }
 #container .conteudo-home {width: 952px; height: 660px; ;border-bottom: 10px solid; ;border-bottom-color: #000;}
-#image-post{ width: 360px; height: 360px; float: left; }
+#image-post{ width: 360px; height: 360px; position: relative; top:100px; left: 200px;}
 #image-post .redondo{ border: none;border-radius: 50%;width: 360px;height: 360px;}
-#circulo-esquerda{ background: #000; border-radius:100%; width:174px; height:174px; float: right; margin: 30px 62px 0px 0px;}
-#teste{ width: 580px; height: 174px; float: left;}
-#circulo-direita{ background: #000; border-radius:100%; width:174px; height:174px; float: left; margin: 0px 0px 0px 80px;}
-#content-agenda{ width: 250px; height: 250px; background: #e1e1e1; float: left;margin: -150px 0px 0px 0px;}
+.circulo { position: relative; background: #000; border-radius:100%; width:174px; height:174px; padding: 10px; color: #FFF;}
+.circulo a { color: #FFF; text-decoration: none}
+  #circulo-esquerda{ right: 10px; top:50px;}
+.circulo #novidades-direita, .circulo #novidades-esquerda { position: relative;}
+
+/*#teste{ width: 580px; height: 174px; float: left;} */
+#circulo-direita{  left: 10px; top:20px; }
+#content-agenda{ width: 250px; height: 280px;  float: left;margin: -150px 0px 0px -100px;}
 #content-agenda-home{ width: 250px; height: 250px; float: left; font-size: 11px; text-align: justify;}
 #content-agenda-home ul{ list-style: none;}
+#titulo-home-agenda{width: 60px; height: 30px;background: url('images/bt_agenda.png') no-repeat; background-size: contain; float: left; padding: 10px 0px;}
+#content-agenda-home p{ padding-bottom: 5px; text-align: justify; font-size: 14px; }
+
 
 /*SEMENTEIA*/
 
@@ -86,7 +94,7 @@ body.sementeia .texto{ width: 402px; height: auto; float: left; margin: 40px 0px
 
 /*RESISTENCIA*/
 
-body.resistencia .content{width:1024px;  background: transparent; }
+body.resistencia .content{width:1024px; }
 body.resistencia .conteudo{ width:952px;   margin: 0 auto; margin: 60px 0px 0px 36px; 
 					   background: transparent;}
 body.resistencia .conteudo-texto{width:563px; height: 750px;  float: left; margin: 0px 0px 0px 161px; padding: 22px 5px;}
@@ -94,18 +102,19 @@ body.resistencia .conteudo-titulo{ width:310px; height: 70px; float: left;margin
 body.resistencia .texto p{ height: auto; float: left; text-align: justify; padding: 10px 0px; }
 
 
-
 /*SEMENTES*/
-body.sementes .content{width:1024px;  }
-body.sementes .conteudo{ width:952px;  margin: 0 auto; margin: 60px 0px 0px 36px; }						
-body.sementes .conteudo-titulo{ width:322px;  margin:0px 0px 0px 140px; float: left; }
+body.sementes .content{width:1024px; }
+body.sementes .conteudo{ width:750px;  margin: 0 auto; float: left;margin: 60px 0px 0px -100px;}						
+body.sementes .conteudo-titulo{ width:322px;  margin:0px 0px 0px 160px; float: left; }
 body.sementes .titulo{width:105px; height: 80px;background: url('images/bt_sementes.png') no-repeat; background-size: contain; float: left;}					
 body.sementes .imagem-circulo{ width:402px; margin:0px 0px 0px 80px;}
 body.sementes .conteudo-texto{width:550px;  margin: 40px 0px 0px 161px;}
 body.sementes .texto p{ height: auto; float: left; text-align: justify; padding: 10px 0px; }
-body.sementes .conteudo-categorias{ width:173px; height: 500px; background: #e1e1e1; float: right; text-decoration: none;}
-body.sementes .sidebar{text-decoration: none}
-
+body.sementes  a{text-decoration: none; font-size: 14px;}
+.conteudo-categorias{ width:173px; height: 500px;float: left; text-decoration: none;margin: 140px 0px 0px 40px; text-align: right;}
+.sidebar a{text-decoration: none}
+.sidebar ul li a.selected{ border-right: 30px solid black;  }
+body.sementes .conteudo-postagem li{ list-style: none; float: left; margin: 30px 0px;}
 body.sementes .circle-image {
   width: 310px;
   height: 310px;
@@ -121,32 +130,30 @@ body.sementes .circle-image {
   overflow: hidden;
 }
 
-
-
-
-/*AGENDA*/
-
-body.agenda .content{width:1024px;}
-body.agenda .conteudo{ width:560px; height: 765px;  margin: 0 auto; margin: 80px 0px 0px 175px;}
-body.agenda .conteudo-titulo{ width:180px; float: left;}
-body.agenda .titulo{width:180px; height: 40px; background: url('images/bt_agenda.png') no-repeat; background-size: contain; float: left;}
-body.agenda .conteudo-postagem{width:560px; height: 650px; float: left; margin: 50px 0px 0px 0px;}
-
-
-
-
-
-
 /*CATEGORIA SEMENTES*/
-body.categorias-sementes .conteudo-titulo{ width:952px; height: 80px; background: red;}					
-body.categorias-sementes .conteudo-texto{width:550px; height: 200px; background: #a25;  margin: 0px 0px 0px 161px;}
-body.categorias-sementes .conteudo-post{width:550px; height: 200px; background: #aaa;  margin: 0px 0px 0px 161px;}
+body.categorias-sementes .content{width:1024px;}
+body.categorias-sementes .conteudo{ width:750px;  margin: 0 auto; float: left;margin: 60px 0px 0px -100px; }
+body.categorias-sementes .conteudo-titulo{ width:631px; height: 70px; float: left; margin: 25px 0px 0px 161px; text-align: left; font-size: 20px;}          
+body.categorias-sementes .conteudo-texto{ width:390px; height: auto;margin: 0px 0px 0px 161px; float: left;text-align: justify;}
+body.categorias-sementes .conteudo-postagem{width:631px; margin: 0px 50px 0px 161px; text-align: justify; float: left;}
+body.categorias-sementes .conteudo-postagem ul {text-decoration: none;margin: 0; padding: 0px;list-style: none; }
+body.categorias-sementes .conteudo-postagem ul li{padding: 20px 0px 0px 0px;}
+body.categorias-sementes .conteudo-postagem ul li a{text-decoration: none;}
+body.categorias-sementes .conteudo-postagem .tags{ font-size: 12px;}
+body.categorias-sementes .conteudo-postagem img{display: block; margin-left: auto; margin-right: auto; padding: 50px 0px; }
 body.categorias-sementes .titulo{text-decoration: none;}
-body.categorias-sementes .conteudo-categorias{ width:173px; height: 500px; background: #e1e1e1; float: right; text-decoration: none;}
-body.categorias-sementes .sidebar{text-decoration: none}
+/*body.categorias-sementes .conteudo-categorias{ width:173px;background: #aaa ;height: 500px;margin: 0px 0px 0px 780px; text-decoration: none; float: right;}*/
+body.categorias-sementes  a{text-decoration: none; font-size: 14px;}
+body.categorias-sementes .date{float: right;}
+body.categorias-sementes .author {float:left;}
+
+
+
 .sidebar li{text-decoration: none; padding: 0px 0px 0px 20px; display: block; float: left; margin: 0px 0px; }
 .sidebar li a{text-decoration: none;}
 .conteudo-post li {text-decoration: none;}
+
+
 body.sementeia .circle-image {
   width: 322px;
   height: 322px;
@@ -154,9 +161,10 @@ body.sementeia .circle-image {
   overflow: hidden;
   margin: 35px 0px 0px 55px;
 }
+body.categorias-sementes .category-div .circle-description {display:none;}
 
 
-.category-div .circle-description {
+body.sementes .category-div .circle-description {
   display:none;
   position: relative;
   left: -150px;
@@ -167,12 +175,36 @@ body.sementeia .circle-image {
   background-color: black;
   color: white;
 }
-.category-div:hover .circle-description {
+body.sementes .category-div:hover .circle-description {
   display: block;
 }
 
+body.sementes .conteudo-categorias .category-div {height: 20px;}
 
+/*AGENDA*/
 
+body.agenda .content{width:1024px;}
+body.agenda .conteudo{ width:560px; height: 765px;  margin: 0 auto; margin: 80px 0px 0px 0px; float: left;}
+body.agenda .conteudo-titulo{ width:180px; float: left; margin: 0px 0px 0px 55px; }
+body.singe .titulo-agenda-post{font-size: 14px;margin: 20px 0px 0px 180px;}
+body.agenda .titulo{width:180px; height: 40px; background: url('images/bt_agenda.png') no-repeat; background-size: contain; float: left;}
+body.agenda .conteudo-postagem{width:560px; height: 650px; float: left; margin: 20px 0px 0px 60px; text-align: justify;}
+body.agenda .conteudo-postagem li{ list-style: none; float: left; margin: 30px 0px;}
+body.agenda .conteudo-postagem a {text-decoration: none;}
+body.agenda .conteudo-postagem p {padding-bottom: 10px;}
+body.agenda .conteudo-postagem img{display: block; margin-left: auto; margin-right: auto }
+body.agenda .conteudo-postagem a { color: black;}
+body.agenda .conteudo-postagem a.active { border-bottom: 10px solid black; margin-bottom: 10px;}
+body.agenda .conteudo-postagem div.body{
+ color: black; overflow: hidden;
+ line-height: 20px; height: 60px;
+ margin-bottom: 20px;
+ transition: height 1s ease;
+ -webkit-transition: height 1s ease;
+ -moz-transition: height 1s ease;
+ -o-transition: height 1s ease;
+}
+body.agenda .conteudo-postagem div.body.active { height: auto;}
 /*CONTATO*/
 
 body.contato .content{width:1024px; height: 765px;  }
@@ -183,7 +215,11 @@ body.contato .conteudo-texto p{margin: 40px 5px; text-align: justify;}
 body.contato .conteudo-texto{width:310px; float: left; margin: 0px 0px 0px 550px;border-bottom: 8px solid; border-bottom-color: #000;}
 
 
-					
+/*body.single .conteudo-titulo{ width:631px; height: 60px; float: left; margin: 0px 0px 0px 161px; text-align: left;} */
+body.single h2{font-size: 18px;}
+body.single .author{font-size: 12px;}	
+body.single .date{font-size: 12px;}
+/*body.single .conteudo-postagem{ font-size: 14px;margin: 20px 0px 0px 160px;}	*/			
 
 /*
 #resistencia-conteudo{ width:952px; height: 765px; ; margin: 0 auto; margin: 60px 0px 0px 36px;}
@@ -196,7 +232,23 @@ body.contato .conteudo-texto{width:310px; float: left; margin: 0px 0px 0px 550px
 #agenda-conteudo-texto{width:563px; height: 550px; background: #a25; float: left; margin: 0px 0px 0px 161px;}
 
 */
-#footer{ width:952px; height: 100px; background: transparent;}
+
+.content-area{width:1024px; margin: 0 auto; float: left;}
+.content-area h1{font-size: 18px; }
+.site-content{ width: 750px; margin:100px 0px 0px 0px; float: left;}
+.archive-header{ float: left;}
+.archive-title{width:750px;float: left; text-align: left;}
+.entry-content{ text-align: justify;}
+.entry-title{ width: 750px; margin: 20px 0px; float: left; text-align: left;}
 
 
+#footer{ width:952px; height: 80px ;  float: left; margin: 0px 0px 0px 36px;}
+#footer-content { text-align: center; }
+#footer-content a {padding: 0 4px; margin: auto; line-height: 18px}
 
+.lW { float: left; clear: left; height: 15px; }
+.rW { float: right; clear: right; height: 15px; }
+
+.clear { clear:both;}
+
+iframe {width: 100%;}

@@ -12,28 +12,29 @@
 
 		<div class="conteudo-titulo">
 
-		<div class="titulo">
-			
+				<div class="titulo">
+					
+
+				</div>
+					 
+							<!-- 
+					<?php if (have_posts()): while (have_posts()) : the_post();?>
+
+					<spam class="titulo"><?php the_title();?></span>
+					
+					<?php endwhile; else:?>
+					<?php endif;?>-->
 
 		</div>
+
+		
 			 
-					<!-- 
-			<?php if (have_posts()): while (have_posts()) : the_post();?>
-
-			<spam class="titulo"><?php the_title();?></span>
-			
-			<?php endwhile; else:?>
-			<?php endif;?>-->
-
-		</div>
-
-		<div class="conteudo-categorias">
-			 
-		</div>
+		
 				<!--<img src="<?php echo $url;?>"/>;-->	
-
+						    		
 							<?php 
 								if(is_page('sementeia')||is_page('sementes')){
+
 											echo "<div class=".'"imagem-circulo"'.">";
 												echo "<div class=".'"circle-image"'.">";
 													
@@ -87,8 +88,16 @@
 		</div>
 		
 	</div>
+	<?php
+	if(is_page('sementes')){
+			echo '<div class="conteudo-categorias">';
+			get_sidebar();
+			echo '</div>';
+			}
+	?>
+
 	
-</div>
+
 
 <?php if(is_page('sementeia')){ ?>
 <?php get_footer();?>

@@ -13,5 +13,21 @@ window.onload = function(ev) {
         	jQuery(c).find('img').width(divWidth);
     });
 
+    jQuery('body.agenda .conteudo-postagem a').on('click', openEvent );
 };
+
+
+function openEvent(event) {
+    event.preventDefault();
+  
+    var hasClass = jQuery(this).hasClass('active');
+
+    jQuery('body.agenda .conteudo-postagem a').removeClass('active');
+    
+    if (!hasClass) jQuery(this).addClass('active');
+    
+    jQuery('body.agenda .conteudo-postagem div.body').removeClass('active');
+    
+    if (!hasClass) jQuery(this).next('div.body').addClass('active');
+}
 
