@@ -4,10 +4,9 @@
 <?php
 /*-if(is_page('movimentos-de-resistencia'))
  	$class="resistencia";*/
-?>
-
+?>	
 <div class="content">
- 
+
 	<div class="conteudo">
 
 		<div class="conteudo-titulo">
@@ -24,10 +23,10 @@
 					
 					<?php endwhile; else:?>
 					<?php endif;?>-->
-
+	
 		</div>
 
-		
+		 
 			 
 		
 				<!--<img src="<?php echo $url;?>"/>;-->	
@@ -88,7 +87,10 @@
 		</div>
 		
 	</div>
+	
+
 	<?php
+
 	if(is_page('sementes')){
 			echo '<div class="conteudo-categorias">';
 			get_sidebar();
@@ -96,14 +98,11 @@
 			}
 	?>
 
-	
-
+</div>	 
 
 <?php if(is_page('sementeia')){ ?>
 <?php get_footer();?>
 <?php }; ?>
 <?php if(is_page('sementes')){ ?>
-<?php get_footer();?>
+<?php /*get_footer()*/;?>
 <?php }; ?>
-
-

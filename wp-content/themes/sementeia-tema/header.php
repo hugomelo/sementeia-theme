@@ -3,14 +3,8 @@
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<title><?php wp_title('-',true,right); bloginfo() ?></title>
-	
 	<script type="text/javascript" src="<?php bloginfo('template_url')?>/js/sementeia.js"></script>
 	<script type="text/javascript" src="shapewrapper.js"></script>
-	
-
-
-
-
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <?php wp_head();?>
@@ -24,7 +18,7 @@ elseif(is_page('contato'))
  	$class="contato";
 elseif(is_page('movimentos-de-resistencia'))
 	$class="resistencia";
-elseif(is_category("agenda") || in_category("agenda"))
+elseif(is_page_template('category-agenda.php' ))
 	$class = "agenda";
 elseif(is_page('sementes'))
 	$class ="sementes";
@@ -35,21 +29,25 @@ elseif (!is_category("agenda")&&is_tag()){
 }
 
 ?>
+
 <body <?php body_class( $class ); ?>>
+<div id="conteudo">
 <div id="header">
-	<div class="header-content"></div>
-					<div class="hearder-logo" >
-					
-									
+<div class="header-content">
+					<div id="hearder-logo" >
+					<a href="<?php echo get_home_url();?>">
+					<img src="<?php bloginfo('template_url')?>/images/sementeia-logo.png" /></a>		
 					</div> <!--fim do header-logo-->
 					
 					<div class="header-content-login">
-							
-					
-						<div class="header-login">
-						
-						</div><!--fim do header-login-->
-			 		
+							<a href="<?php echo get_home_url();?>"> </a>			
+					<?php 
+						if($class=='index'){	
+										echo '<div class="header-login">';
+										
+										echo '</div> <!--fim do header-login-->';
+			 							}
+			 		?>
 			 		</div><!--fim do header-content-login-->
 					
 					<?php $c="class=selected"; ?>
@@ -57,13 +55,13 @@ elseif (!is_category("agenda")&&is_tag()){
 						<div class="header-paginas">
 							<ul>
 								<li><a  <?php if ($class == "sementeia") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('sementeia'));?>"> 
-								<img src="<?php bloginfo('template_url')?>/images/bt_sementeia.png" rel="" title=""/></a></li>
+								<img src="<?php bloginfo('template_url')?>/images/bt_sementeia.png" /></a></li>
 							  	
 							  	<li><a  <?php if ($class == "resistencia") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('movimentos de resistencia'));?>"> 
-								<img src="<?php bloginfo('template_url')?>/images/bt_mov_resis.png" rel="" title=""/></a></li>
+								<img src="<?php bloginfo('template_url')?>/images/bt_mov_resis.png"/></a></li>
 								
 								<li><a  <?php if ($class == "sementes") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('sementes'));?>"> 
-								<img src="<?php bloginfo('template_url')?>/images/bt_sementes.png" rel="" title=""/></a></li>
+								<img src="<?php bloginfo('template_url')?>/images/bt_sementes.png" /></a></li>
 												
 								<?php
 								     $category_id=get_cat_ID('agenda');
@@ -71,10 +69,10 @@ elseif (!is_category("agenda")&&is_tag()){
 
 								?>
 								<li><a <?php if ($class == "agenda") echo $c; ?> href="<?php echo($category_link);?>"> 
-								<img src="<?php bloginfo('template_url')?>/images/bt_agenda.png" rel="" title=""/></a></li>
+								<img src="<?php bloginfo('template_url')?>/images/bt_agenda.png" /></a></li>
 								
 								<li><a  <?php if ($class == "contato") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('contato'));?>">  
-								<img src="<?php bloginfo('template_url')?>/images/bt_contato.png" rel="" title=""/></a></li>							
+								<img src="<?php bloginfo('template_url')?>/images/bt_contato.png" /></a></li>							
 
 							</ul>							
 							
@@ -84,10 +82,5 @@ elseif (!is_category("agenda")&&is_tag()){
 
 					
 	</div><!--fim do header-content-->
-
 </div><!--fim do header-->
-<div class=clear></div>
-
-
-
-
+</div> <!--conteudo-->

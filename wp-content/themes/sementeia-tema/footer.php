@@ -1,6 +1,7 @@
 
-<div id="footer">
-	<div id="footer-content">
+<div class="footer">
+	 
+	<div class="footer-content">
 		
 		<?php wp_tag_cloud( '
 			smallest=10&
