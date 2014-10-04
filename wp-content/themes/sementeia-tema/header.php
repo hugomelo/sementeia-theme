@@ -10,6 +10,7 @@
 <?php wp_head();?>
 </head>
 <?php
+
 if (is_front_page())
 	$class="index";
 elseif(is_page('sementeia'))
