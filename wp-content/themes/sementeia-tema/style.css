@@ -54,7 +54,7 @@ body.index .header-menu {
   width: 620px; 
   position: relative;
   top:-160px;
-  left: 195px; 
+  left: 192px; 
 }
 
 /*
@@ -252,12 +252,12 @@ body.sementeia .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+  border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.sementeia .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 
 body.sementeia .content{
@@ -346,12 +346,12 @@ body.resistencia .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+  border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.resistencia .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 
 body.resistencia .content{
@@ -417,12 +417,12 @@ body.sementes .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+  border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.sementes .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 body.sementes .content{
   width: 952px;
@@ -483,14 +483,26 @@ body.sementes .conteudo-categorias a{
 body.categorias-sementes .category-div .circle-description {
   display:none;
 }
-
+/*
 body.sementes .category-div .circle-description {
   display:none;
   position: relative;
   left: -150px;
   top: -50px;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+} testando abaixo com position absolute e deu certo*/ 
+
+body.sementes .category-div .circle-description {
+  display:none;
+  position: absolute;
+  left: -210px;
+  top: -120px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background-color: black;
   color: white;
@@ -503,6 +515,15 @@ body.sementes .category-div:hover .circle-description {
 body.sementes .conteudo-categorias .category-div {
   height: 30px;
   float: right;
+}
+
+body.sementes .footer{
+  width:952px;
+  border-top: 8px solid black;
+  position: relative;
+  padding-top: 10px;
+  top:135px;
+  
 }
 
 /*CATEGORIAS SEMENTES*/
@@ -537,12 +558,12 @@ body.categorias-sementes .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+    border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.categorias-sementes .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 
 body.categorias-sementes .content{
@@ -576,7 +597,7 @@ body.single .conteudo-titulo-post{
   height: 1px;
   position: relative;
   top:-70px;
-  left:180px;
+  left:177px;
 }
 
 body.categorias-sementes .titulo p{
@@ -614,7 +635,7 @@ body.single .conteudo-postagem{
   text-align: justify;
   position: relative;
   top:10px;
-  left: 0px;
+  left: 5px;
 }
 
 body.categorias-sementes .conteudo-postagem ul {
@@ -630,6 +651,7 @@ body.categorias-sementes .conteudo-postagem ul li{
 
 body.categorias-sementes .conteudo-postagem ul li a{
   text-decoration: none;
+   
 }
 
 body.categorias-sementes .conteudo-postagem .tags{ 
@@ -641,7 +663,9 @@ body.categorias-sementes .conteudo-postagem .tags{
 body.categorias-sementes .sidebar{
   height: 1px;
   position: relative;
-  top: -500px;
+  top: -509px;
+  left: 5px;
+ 
 
 }
 
@@ -679,21 +703,27 @@ body.categorias-sementes .conteudo-categorias a{
 }
 
 body.categorias-sementes .conteudo-categorias .category-div {
-
-  padding:7px 5px 0px 0px;
+  padding:9px 5px 0px 0px;
   float: right;
 }
 
 body.categorias-sementes .date{
   position: relative;
   top: 3px;
-  left: 450px;
+  left: 455px;
 }
 body.categorias-sementes .author {
   position: relative;
   top: 3px;
-  left:20px;
+  left:26px;
 
+}
+
+body.categorias-sementes .conteudo-postagem img{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 50px 0px; 
 }
 
 
@@ -729,12 +759,12 @@ body.category-agenda .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+    border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.category-agenda .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 
 body.category-agenda .content{
@@ -816,11 +846,12 @@ body.contato .header-menu{
   float: right;
   position: relative;
   top:-120px;
+  left: -19px;
 }
 body.contato .header-paginas{
   height: 100px;
   position: relative;
-  left:-10px;
+  left:0px;
   top:-40px;
 }
 
@@ -841,17 +872,81 @@ body.contato .header-paginas ul li a {
   display: block;
   position: relative;
   height: auto;
-  border-top: 20px solid transparent;
-  padding: 16px 0px 0px 0px;
+   border-top: 25px solid transparent;
+  padding: 11px 0px 0px 0px;
 
 }
 body.contato .header-paginas ul li a.selected {
- border-top: 20px solid black;
+ border-top: 25px solid black;
 }
 
+body.contato .conteudo-titulo{ 
+  width:310px; 
+  height: 50px;
+  position: relative;
+  top:160px;
+  left:170px; 
 
+}
+body.contato .titulo {
+  width:180px; 
+  height: 40px; 
+  background: url('images/bt_contato.png') no-repeat; 
+  background-size: contain; 
+ }
+body.contato .conteudo-texto p{
+  margin: 40px 5px; 
+  text-align: justify;
+}
+body.contato .conteudo-texto{
+  position: relative;
+  top:-10px;
+  left:235px; 
+  width:310px; 
+  border-bottom: 8px solid; 
+  border-bottom-color: #000;
+}
 
+/*TAGS*/
 
+body.tag .content-area{
+  width:1024px; 
+  margin: 0 auto; 
+  float: left;
+}
+body.tag .content-area h1{
+  font-size: 18px; 
+}
+body.tag .site-content{ 
+  width: 750px;
+  position: relative;
+  top:-70px;
+  left:480px;
+  padding:20px;
+}
+body.tag .archive-header{
+
+}
+body.tag .archive-title{
+  width:750px;
+  text-align: left;
+}
+
+body.tag .entry-content{ 
+  text-align: justify;
+  padding-bottom:20px; 
+}
+body.tag .entry-title{ 
+  width: 750px; 
+  text-align: left;
+}
+
+body.tag .conteudo-postagem img{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 50px 0px; 
+}
 
 /*body.sementeia .logo-sementeia{width: 96px; height: 96px;  background: url('images/sementeia_logo.jpg') no-repeat; 
 			  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;

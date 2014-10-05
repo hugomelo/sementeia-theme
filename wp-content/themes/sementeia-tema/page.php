@@ -105,5 +105,5 @@
 <?php get_footer();?>
 <?php }; ?>
 <?php if(is_page('sementes')){ ?>
-<?php /*get_footer()*/;?>
+<?php get_footer();?>
 <?php }; ?>
