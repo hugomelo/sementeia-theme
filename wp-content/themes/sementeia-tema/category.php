@@ -25,8 +25,7 @@
 		
 
 		<div class="conteudo-postagem">
-		
-				<ul>
+			<ul>
 					<?php 
 						if(is_category('agenda'))
 							load_template(WP_CONTENT_DIR . '\themes\sementeia-tema\category-a.php'); 
