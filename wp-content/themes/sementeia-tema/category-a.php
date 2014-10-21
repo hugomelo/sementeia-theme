@@ -1,7 +1,6 @@
 
 
 <?php get_header();?>
-
 <?php
 
 	$id_agenda=get_cat_ID('agenda');

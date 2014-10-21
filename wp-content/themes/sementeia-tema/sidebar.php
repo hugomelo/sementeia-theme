@@ -18,4 +18,5 @@ foreach($cats as $cat) {
 //wp_list_categories( $args );
 ?> 
 
+
 </div> <!--fim do sidebar-->
