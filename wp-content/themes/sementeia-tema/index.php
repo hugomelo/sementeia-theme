@@ -67,10 +67,8 @@ wp_reset_postdata();
 						
 						<!--PRECISO ARRUMAR ISSO AINDA-->
 						<?php query_posts('showposts=4&category_name=agenda');?>
-						<?php $category_id=get_cat_ID('agenda');?>
-						<?php $category_link=get_category_link( $category_id ); ?> 
 						<?php if (have_posts()): while (have_posts()) : the_post();?>
-						<a href="<?php echo $category_link;?>"><?php the_excerpt_rereloaded(8,''); ?></a>
+						<?php echo '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>'; ?>
 						<?php endwhile; else:?>
 						<?php endif;?>
 						

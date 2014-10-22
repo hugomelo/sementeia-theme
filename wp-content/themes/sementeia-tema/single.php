@@ -7,7 +7,7 @@
 
 		<?php
 			if (in_category('agenda')){
-				load_template(WP_CONTENT_DIR . '\themes\sementeia-tema\category-a.php'); 
+				load_template(WP_CONTENT_DIR . DS.'themes'.DS.'sementeia-tema'.DS.'category-a.php'); 
 			}
 			else {
 				echo "<div class=\"conteudo-titulo-post\">";
