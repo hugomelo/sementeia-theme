@@ -1,6 +1,7 @@
 
 
-<?php get_header(); ?>
+<?php get_header();
+?>
 
 <div class="content">
 	<div class="conteudo-agenda">
@@ -25,11 +26,10 @@
 		
 
 		<div class="conteudo-postagem">
-		
-				<ul>
+			<ul>
 					<?php 
 						if(is_category('agenda'))
-							load_template(WP_CONTENT_DIR . '\themes\sementeia-tema\category-a.php'); 
+							load_template(WP_CONTENT_DIR . DS. 'themes'.DS.'sementeia-tema'.DS.'category-a.php'); 
 						else{
 								//query_posts('showposts=4');		
 								if (have_posts()): while (have_posts()) : the_post();

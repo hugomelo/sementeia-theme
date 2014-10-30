@@ -18,8 +18,9 @@ body.category-agenda{background: url('/wp-content/themes/sementeia-tema/images/b
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
 body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial5.png') no-repeat; background-position: top center;}
 body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
-/*body.archive{background: url('/wp-content/themes/sementeia-tema/images/background_sementeia17.png') no-repeat; background-position: top center;}
-*/
+body.archive{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
+
+
 a{ text-decoration: none; color: black;}
 #conteudo{
   width: 1024px;
@@ -262,7 +263,7 @@ body.sementeia .header-paginas ul li a.selected {
 
 body.sementeia .content{
   width: 952px;
-  height: 725px;
+  height: auto;
   position: relative;
   top:90px;
   border-bottom: 10px solid #000;
@@ -378,6 +379,21 @@ body.resistencia .conteudo-texto{
   left:-35px;
 }
 
+body.resistencia .texto{
+
+width: 630px;
+
+}
+
+body.resistencia .movimentos-resistencia-texto{
+position: relative;
+top:-20px;
+float: left;
+width: 630px;
+
+}
+
+
 body.resistencia .texto p{
   height: auto;
   text-align: justify;
@@ -426,7 +442,7 @@ body.sementes .header-paginas ul li a.selected {
 }
 body.sementes .content{
   width: 952px;
-  height: 800px;
+  height: ;
   position: relative;
   top:90px;
 }
@@ -468,8 +484,8 @@ body.sementes .circle-image {
 body.sementes .conteudo-categorias{
   width: 175px;
   height: auto;
-  position: relative;
-  top:-620px;
+  position: absolute;
+  top:187px;
   right:0px;
   float: right;
 }
@@ -588,17 +604,7 @@ top: -70px;
 left:200px;
 }
 
-.post-conteudo{
-  height: 0px;
-}
 
-body.single .conteudo-titulo-post{
-  float: left;
-  height: 1px;
-  position: relative;
-  top:-70px;
-  left:177px;
-}
 
 body.categorias-sementes .titulo p{
   font-size: 20px;
@@ -616,27 +622,21 @@ body.categorias-sementes .conteudo-texto{
 }
 
 body.categorias-sementes .conteudo-texto p{
-  height: 1px;
+  height: 0px;
+  position: relative;
+  top:0px;
 }
 
-body.categorias-sementes .conteudo-postagem{
+body.archive .conteudo-postagem{
   float: left;
   width:631px;
   text-align: justify;
   position: relative;
   top:150px;
-  left: 20px;
+  left:0px;
 }
 
 
-body.single .conteudo-postagem{
-  float: left;
-  width:631px;
-  text-align: justify;
-  position: relative;
-  top:10px;
-  left: 5px;
-}
 
 body.categorias-sementes .conteudo-postagem ul {
   text-decoration: none;
@@ -660,14 +660,28 @@ body.categorias-sementes .conteudo-postagem .tags{
 
 /*SIDEBAR*/
 
-body.categorias-sementes .sidebar{
-  height: 1px;
-  position: relative;
-  top: -509px;
-  left: 5px;
+body.archive .category-div {
+  height: 30px;
+  float: right;
+}
 
+body.archive .sidebar{
+      position: absolute;
+      top: 267px;
+      left: 38px;
 
 }
+
+body.archive .sidebar li{
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  display: block;
+  float: left;
+  margin: 0px 0px;
+}
+
+
+
 
 .sidebar li{
   text-decoration: none;
@@ -695,38 +709,18 @@ body.categorias-sementes .conteudo-categorias{
 
 }
 
+
 body.categorias-sementes .conteudo-categorias a{
   font-size: 13px;
   text-transform: uppercase;
   padding-bottom: 10px;
 
 }
-
+/*
 body.categorias-sementes .conteudo-categorias .category-div {
   padding:9px 5px 0px 0px;
   float: right;
 }
-
-body.categorias-sementes .date{
-  position: relative;
-  top: 3px;
-  left: 455px;
-}
-body.categorias-sementes .author {
-  position: relative;
-  top: 3px;
-  left:26px;
-
-}
-
-body.categorias-sementes .conteudo-postagem img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px 0px;
-}
-
-
 /*AGENDA*/
 
 body.category-agenda .header-menu{
@@ -797,10 +791,10 @@ body.category-agenda .titulo{
   left: 235px;
 }
 body.category-agenda .conteudo-postagem{
-  width:560px;
-  height:650px;
+  width:630px;
+  height:auto;
   float: left;
-  margin: 20px 0px 0px 60px;
+  margin: -150px 0px 0px 60px;
   text-align: justify;
 }
 body.category-agenda .conteudo-postagem li{
@@ -920,11 +914,14 @@ body.tag .content-area h1{
 body.tag .site-content{
   width: 750px;
   position: relative;
-  top:-70px;
-  left:480px;
+  top:-95px;
+  left:360px;
   padding:20px;
 }
-body.tag .archive-header{
+body.tag .entry-header{
+  position: relative;
+  top:0px;
+  left:0px;
 
 }
 body.tag .archive-title{
@@ -935,10 +932,16 @@ body.tag .archive-title{
 body.tag .entry-content{
   text-align: justify;
   padding-bottom:20px;
+  position: relative;
+  top:0px;
+  left:0px;
 }
 body.tag .entry-title{
   width: 750px;
   text-align: left;
+  position: relative;
+  top:0px;
+  left:0px;
 }
 
 body.tag .conteudo-postagem img{
@@ -947,6 +950,102 @@ body.tag .conteudo-postagem img{
   margin-right: auto;
   padding: 50px 0px;
 }
+
+
+/*ARCHIVE*/
+body.archive .conteudo-categorias{
+  width: 175px;
+  height: auto;
+  position: relative;
+  top:10px;
+  right:-380px;
+
+}
+
+/*SINGLE*/
+
+body.single .post-conteudo{
+  height: 10px;
+  width: auto;
+  position: relative;
+  top:153px;
+}
+
+/*
+body.single .conteudo-titulo-post{
+  float: left;
+  height: 1px;
+  position: relative;
+  top:-230px;
+  left:181px;
+}
+*/
+
+body.single .conteudo-titulo-post{
+  float: left;
+  width: 630px;
+  height: 35px;
+  position: relative;
+  top:-230px;
+  left:197px;
+  text-align: left;
+}
+
+body.single .post-title{
+  position: relative;
+  left: 0px;
+}
+
+body.single .dados-postagem{
+
+}
+
+
+body.single .date{
+  position: relative;
+  top: 0px;
+  left: 425px;
+}
+body.single .author {
+  position: relative;
+  top: 0px;
+  left:0px;
+
+}
+
+body.single .conteudo-postagem{
+  width:630px;
+  height: 800px;
+  text-align: justify;
+  position: relative;
+  top:0px;
+  left: 0px;
+}
+
+
+body.single .post{
+
+float: left;
+margin-top: -205px;
+
+}
+
+
+body.single .conteudo-postagem p{
+  text-align: justify;
+
+  margin-top: 15px;
+
+}
+
+body.single .conteudo-postagem img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px 0px;
+}
+
+
 
 /*body.sementeia .logo-sementeia{width: 96px; height: 96px;  background: url('images/sementeia_logo.jpg') no-repeat;
 			  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;

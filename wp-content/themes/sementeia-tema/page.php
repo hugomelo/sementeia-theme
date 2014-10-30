@@ -27,8 +27,7 @@
 	
 		</div>
 
-		 
-			 
+		 			 
 		
 				<!--<img src="<?php echo $url;?>"/>;-->	
 						    		
@@ -68,7 +67,9 @@
 													}
 							if(is_page('movimentos-de-resistencia')){
 														if (have_posts()): while (have_posts()) : the_post();
+														echo'<div class="movimentos-resistencia-texto">';
 														the_content();
+														echo'</div>';
 														endwhile; else:
 														endif;
 													}

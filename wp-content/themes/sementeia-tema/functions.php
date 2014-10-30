@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Twenty Twelve functions and definitions
@@ -42,6 +41,9 @@ if ( ! isset( $content_width ) )
  *
  * @since Twenty Twelve 1.0
  */
+
+define('DS', DIRECTORY_SEPARATOR);
+
 function twentytwelve_setup() {
 	/*
 	 * Makes Twenty Twelve available for translation.
