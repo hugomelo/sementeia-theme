@@ -24,6 +24,8 @@ while(have_posts()) {
 wp_reset_postdata();
 ?>
 
+<img class=back_esq src=/wp-content/themes/sementeia-tema/images/home_bolinhas_esq.png />
+<img class=back_dir src=/wp-content/themes/sementeia-tema/images/home_bolinhas_dir.png />
 <div id="container">
 			
 			<div id="circulo-esquerda" class="circulo">

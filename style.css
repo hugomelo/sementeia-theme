@@ -10,12 +10,7 @@ Version: 1.0
 
 *{margin: 0 auto; padding: 0;}
 body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%; text-align: center; background-size: "100% 100%";}
-body.index {
-  background-image: url('/wp-content/themes/sementeia-tema/images/background_sementeial.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-}
+body.index { }
 body.sementeia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 body.resistencia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial3.png') no-repeat; background-position: top center;}
 body.sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
@@ -25,6 +20,13 @@ body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/imag
 body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 body.archive{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 
+
+img.back_esq, img.back_dir {
+  position: absolute;
+  top: 50%;
+}
+img.back_esq { left: 0; }
+img.back_dir { right: 0; }
 
 a{ text-decoration: none; color: black;}
 #conteudo{
