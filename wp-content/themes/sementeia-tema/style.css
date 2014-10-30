@@ -9,8 +9,13 @@ Version: 1.0
 
 
 *{margin: 0 auto; padding: 0;}
-body{ background: #069; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%; text-align: center; background-size: "100% 100%";}
-body.index{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial.png') no-repeat; background-position: top center; }
+body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%; text-align: center; background-size: "100% 100%";}
+body.index {
+  background-image: url('/wp-content/themes/sementeia-tema/images/background_sementeial.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
 body.sementeia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 body.resistencia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial3.png') no-repeat; background-position: top center;}
 body.sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
