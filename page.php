@@ -1,11 +1,9 @@
+<?php if(is_page('sementeia')): ?>	
+<?php endif ?>	
 
 
 <?php get_header(); ?>
 
-<?php
-/*-if(is_page('movimentos-de-resistencia'))
- 	$class="resistencia";*/
-?>	
 <div class="content">
 
 	<div class="conteudo">
@@ -38,8 +36,7 @@
 												echo "<div class=".'"circle-image"'.">";
 													
 															$p = get_page_by_path('circle-images','ARRAY_A');
-															$attachments = get_children( array('post_parent' => $p
-																->ID,
+															$attachments = get_children( array('post_parent' => $p['ID'],
 															'post_type' => 'attachment', 'post_mime_type' =>'image') );
 															$n = rand(0,count($attachments)-1);
 															$k = array_keys($attachments);

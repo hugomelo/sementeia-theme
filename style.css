@@ -10,9 +10,15 @@ Version: 1.0
 
 *{margin: 0 auto; padding: 0;}
 body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%; text-align: center; background-size: "100% 100%";}
-body.index { }
-body.sementeia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
-body.resistencia{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial3.png') no-repeat; background-position: top center;}
+body.index {}
+
+.sementeia #conteudo{
+  background-image: url('/wp-content/themes/sementeia-tema/images/sementeia_bolinhas.png');
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+}
+
+body.resistencia{}
 body.sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
 body.category-agenda{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial7.png') no-repeat; background-position: top center;}
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}

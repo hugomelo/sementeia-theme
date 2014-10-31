@@ -2,26 +2,22 @@
 
 <?php get_header(); ?>
 <?php
-// Image url
-$p = get_page_by_path('circle-images','ARRAY_A');
-$attachments = get_children( array('post_parent' => $p->ID,
-	'post_type' => 'attachment', 'post_mime_type' =>'image') );
-			
-				
-$n = rand(0,count($attachments)-1);
-$k = array_keys($attachments);
-		
-$imageUrl = wp_get_attachment_url( $attachments[$k[$n]]->ID);
+	// Image url
+	$p = get_page_by_path('circle-images','ARRAY_A');
+	$attachments = get_children( array('post_parent' => $p['ID'], 'post_type' => 'attachment', 'post_mime_type' =>'image') );
+	$n = rand(0,count($attachments)-1);
+	$k = array_keys($attachments);
+	$imageUrl = wp_get_attachment_url( $attachments[$k[$n]]->ID);
 
-// pega os titulos dos posts em destaque para os circulos
-$args=array('posts_per_page'=>2, 'tag' => 'destaque', 'order' => 'ASC');
-$wp_query = new WP_Query( $args );
-$destaques = array();
-while(have_posts()) {
-    the_post();
- 	$destaques[] = '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>';
-}
-wp_reset_postdata();
+	// pega os titulos dos posts em destaque para os circulos
+	$args=array('posts_per_page'=>2, 'tag' => 'destaque', 'order' => 'ASC');
+	$wp_query = new WP_Query( $args );
+	$destaques = array();
+	while(have_posts()) {
+		the_post();
+		$destaques[] = '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>';
+	}
+	wp_reset_postdata();
 ?>
 
 <img class=back_esq src=/wp-content/themes/sementeia-tema/images/home_bolinhas_esq.png />
