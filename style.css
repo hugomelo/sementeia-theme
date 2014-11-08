@@ -33,10 +33,9 @@ body.archive{background: url('/wp-content/themes/sementeia-tema/images/backgroun
 
 img.back_esq, img.back_dir {
   position: absolute;
-  top: 50%;
 }
-img.back_esq { left: 0; }
-img.back_dir { right: 0; }
+img.back_esq { top: 50%; left: 0; }
+img.back_dir { top: 75%; right: 0; }
 .resistencia img.back_dir { bottom: 0; top: auto}
 
 a{ text-decoration: none; color: black;}
@@ -115,7 +114,7 @@ body.index .header-paginas ul li a.selected {
   position: relative;
   top:90px;
   border-bottom: 10px solid #000;
- }
+}
 .circulo {
   background: #000;
   border-radius:100%;
@@ -125,57 +124,54 @@ body.index .header-paginas ul li a.selected {
   color: #fff;
 }
 .circulo a{
- color: #fff;
- text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 
 
-#circulo-esquerda .circulo-align span{
+.circulo-align span{
   font-size: 20px;
 }
 
-#circulo-esquerda{
- position: relative;
- right: -360px;
- top: 5px;
+#circulo-direita, #circulo-esquerda{
+  position: absolute;
+}
+#circulo-direita a, #circulo-esquerda a{
+  font-size: 14px;
 }
 
-#circulo-esquerda a{
-   font-size: 14px;
+#circulo-direita {
+  right: 0px;
+  top: 5px;
+}
+#circulo-esquerda {
+  left:20px;
+  top:350px;
+}
+
+#circulo-direita .circulo-align {
+  top: -2px;
+  right: 5px;
+}
+#circulo-esquerda .circulo-align {
+  top: -2px;
+  right: 5px;
 }
 
 
-#circulo-esquerda .circulo-align{
-width: auto;
-height: 1px;
-position: absolute;
-top:30px;
-right:40px;
-}
-
-#circulo-direita .circulo-align span{
-  font-size: 20px;
-}
-
-
-#circulo-direita{
+.circulo-align{
+  font-size: 13px;
+  width: auto;
+  height: 1px;
   position: relative;
-  left:-340px;
-  top:150px;
-}
-
-#circulo-direita .circulo-align{
-    position: relative;
-    top: -25px;
-    font-size: 13px;
 }
 
 .lW{
- float: left;
- clear: left;
- height: 15px;
- }
+  float: left;
+  clear: left;
+  height: 15px;
+}
 
 .rW{
  float: right;
@@ -191,9 +187,9 @@ left: -170px;
 }
 
 body.home .circle-image {
-  position: relative;
-  top:-305px;
-  left: 0px;
+  position: absolute;
+  top:-20px;
+  left: 130px;
   width: 360px;
   height: 360px;
   border-radius: 50%;
@@ -207,37 +203,27 @@ body.home .circle-image {
 }
 
 #content-agenda{
+  text-align: left;
+  font-size: 13px;
   width: 250px;
   height: 280px;
-  position: relative;
-  top:-400px;
-  left:200px;
-}
-
-#content-agenda-home{
-  width: 235px;
-  height: 250px;
-  font-size: 11px;
-  text-align: justify;
-  float: left;
-}
-#content-agenda-home ul {
-  list-style: none;
+  position: absolute;
+  top:190px;
+  right:140px;
+  margin: 0;
 }
 
 #titulo-home-agenda{
-  width: 60px;
-  height: 30px;
-  background: url('images/bt_agenda.png') no-repeat;
-  background-size: contain;
-  float: left;
-  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+#content-agenda-home ul {
+  list-style: none;
 }
 
 #content-agenda-home p{
  padding-bottom: 5px;
  text-align: justify;
- font-size: 14px;
  }
 
 /*SEMENTEIA*/

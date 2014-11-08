@@ -24,8 +24,9 @@
 <img class=back_dir src=/wp-content/themes/sementeia-tema/images/home_bolinhas_dir.png />
 <div id="container">
 			
+			
 			<div id="circulo-esquerda" class="circulo">
-				<div class="novidades novidades-esquerda">
+				<div class="">
 				<div class="lW" style="width:45px;"></div><div class="rW" style="width:47px;"></div><div class="lW" style="width:21px;"></div><div class="rW" style="width:17px;"></div><div class="lW" style="width:14px;"></div><div class="rW" style="width:9px;"></div><div class="lW" style="width:7px;"></div><div class="rW" style="width:3px;"></div><div class="lW" style="width:3px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:4px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:5px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:6px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:13px;"></div><div class="rW" style="width:8px;"></div><div class="lW" style="width:24px;"></div><div class="rW" style="width:15px;"></div><div class="lW" style="width:34px;"></div><div class="rW" style="width:33px;"></div><div class="lW" style="width:84px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:0px;"></div><div class="rW" style="width:0px;"></div>
 					<div class=circulo-align>
 							<span>NOVIDADES:</span>
@@ -34,48 +35,35 @@
 				</div>
 			</div><!--fim do circulo-esquerda-->
 			
-			
 			<div id="circulo-direita" class=circulo>
-				<div id="novidades-direita">
+				<div id="">
 				<div class="lW" style="width:45px;"></div><div class="rW" style="width:47px;"></div><div class="lW" style="width:21px;"></div><div class="rW" style="width:17px;"></div><div class="lW" style="width:14px;"></div><div class="rW" style="width:9px;"></div><div class="lW" style="width:7px;"></div><div class="rW" style="width:3px;"></div><div class="lW" style="width:3px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:4px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:5px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:6px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:13px;"></div><div class="rW" style="width:8px;"></div><div class="lW" style="width:24px;"></div><div class="rW" style="width:15px;"></div><div class="lW" style="width:34px;"></div><div class="rW" style="width:33px;"></div><div class="lW" style="width:84px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:0px;"></div><div class="rW" style="width:0px;"></div>
 					<div class=circulo-align>
 						<span>NOVIDADES:</span>
-						<p><?php echo $destaques[1];?></p>							
+						<p class="nav"><?php echo $destaques[1];?></p>							
 					</div>
-				</div><!--fim do novidades-direita-->
+				</div>
 			</div><!--fim do circulo-direita-->
 
-			<div id="image-post">
-				<div class="circle-image">
-					<img src="<?php echo $imageUrl; ?>" /> 				
-				</div>
-			</div><!--fim do image-post-->
+			<div class="circle-image">
+				<img src="<?php echo $imageUrl; ?>" /> 				
+			</div>
 
 			
 			<div id="content-agenda">
-
-				<div id="titulo-home-agenda">
-
-
-				</div>
-				
+				<img src="/wp-content/themes/sementeia-tema/images/bt_agenda.png" id="titulo-home-agenda">
 				<div id="content-agenda-home">
-				<ul>
-					<li>
-						
-						<!--PRECISO ARRUMAR ISSO AINDA-->
-						<?php query_posts('showposts=4&category_name=agenda');?>
-						<?php if (have_posts()): while (have_posts()) : the_post();?>
-						<?php echo '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>'; ?>
-						<?php endwhile; else:?>
-						<?php endif;?>
-						
-
-					</li>
-				</ul>
-		
-				</div><!--fim do content-agenda-->
-			</div>
+					<ul>
+						<li>
+							<?php query_posts('showposts=4&category_name=agenda');?>
+							<?php if (have_posts()): while (have_posts()) : the_post();?>
+							<?php echo '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>'; ?>
+							<?php endwhile; else:?>
+							<?php endif;?>
+						</li>
+					</ul>
+				</div>
+			</div><!--fim do content-agenda-->
 		
 		</div> 
 
