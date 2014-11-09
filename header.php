@@ -22,8 +22,6 @@ elseif(is_category("agenda"))
 	$class = "agenda";
 elseif(is_page('sementes'))
 	$class ="sementes";
-elseif(!is_category("agenda"))
-	$class ="categorias-sementes";
 elseif (!is_category("agenda")&&is_tag()){
 	$class ="categorias-sementes";
 }
@@ -35,12 +33,12 @@ elseif (!is_category("agenda")&&is_tag()){
 	<div id="header">
 		<div class="header-content">
 			<div id="hearder-logo" >
-				<a href="<?php echo get_home_url();?>">
+				<a href="/">
 				<img src="<?php bloginfo('template_url')?>/images/sementeia-logo.png" /></a>		
 			</div> <!--fim do header-logo-->
 
 			<div class="header-content-login">
-				<a href="<?php echo get_home_url();?>"> </a>			
+				<a href="/"></a>			
 				<?php if($class=='index'): ?>
 					<a  class="header-login" href="<?php echo wp_login_url(); ?>" title="Login"> </a>			
 				<?php endif ?>

@@ -1,5 +1,6 @@
 </div> <!--conteudo-->
 
+</div><!-- fim do content-->
 <div class="footer">
 	 
 	<div class="footer-content">
@@ -16,7 +17,6 @@
 	
 	</div> <!-- fim do footer-content-->
 </div><!--fim do footer-->
-</div><!-- fim do content-->
 <?php wp_footer();?>	
 </body>
 </html>

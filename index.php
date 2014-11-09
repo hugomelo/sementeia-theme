@@ -23,8 +23,6 @@
 <img class=back_esq src=/wp-content/themes/sementeia-tema/images/home_bolinhas_esq.png />
 <img class=back_dir src=/wp-content/themes/sementeia-tema/images/home_bolinhas_dir.png />
 <div id="container">
-			
-			
 			<div id="circulo-esquerda" class="circulo">
 				<div class="">
 				<div class="lW" style="width:45px;"></div><div class="rW" style="width:47px;"></div><div class="lW" style="width:21px;"></div><div class="rW" style="width:17px;"></div><div class="lW" style="width:14px;"></div><div class="rW" style="width:9px;"></div><div class="lW" style="width:7px;"></div><div class="rW" style="width:3px;"></div><div class="lW" style="width:3px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:4px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:5px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:6px;"></div><div class="rW" style="width:1px;"></div><div class="lW" style="width:13px;"></div><div class="rW" style="width:8px;"></div><div class="lW" style="width:24px;"></div><div class="rW" style="width:15px;"></div><div class="lW" style="width:34px;"></div><div class="rW" style="width:33px;"></div><div class="lW" style="width:84px;"></div><div class="rW" style="width:0px;"></div><div class="lW" style="width:0px;"></div><div class="rW" style="width:0px;"></div>
