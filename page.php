@@ -8,12 +8,20 @@
 
 <div class="content">
 
-	<div class="conteudo">
+	<?php
 
+	if(is_page('sementes')){
+		echo '<div class="conteudo-categorias">';
+		get_sidebar();
+		echo '</div>';
+	}
+	?>
+
+
+	<div class="conteudo">
 		<?php 
 			if(is_page('sementeia')||is_page('sementes')){
 
-				echo "<div class=".'"imagem-circulo"'.">";
 					echo "<div class=".'"circle-image"'.">";
 						$p = get_page_by_path('circle-images','ARRAY_A');
 						$attachments = get_children( array('post_parent' => $p['ID'],
@@ -24,7 +32,6 @@
 					
 						printf ('<img src="%s"/>',$url);
 
-					echo "</div>";
 				echo "</div>";
 			}
 		?>
@@ -42,18 +49,10 @@
 			?>	
 
 		</div>
+		<div class=clear></div>
 		
 	</div>
 	
-
-	<?php
-
-	if(is_page('sementes')){
-		echo '<div class="conteudo-categorias">';
-		get_sidebar();
-		echo '</div>';
-	}
-	?>
 
 </div>	 
 

@@ -7,13 +7,49 @@ Version: 1.0
 
 */
 
-html {
-overflow: scroll;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
-*{margin: 0 auto; padding: 0;}
-body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%; text-align: center;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
 
+audio,
+canvas,
+video {
+	display: inline-block;
+	max-width: 100%;
+}
+
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%;}
+
+#conteudo, .footer {
+  margin: 0 auto;
+}
 .sementeia #conteudo{
   background-image: url('/wp-content/themes/sementeia-tema/images/sementeia_bolinhas.png');
   background-position: 20% 0%;
@@ -25,7 +61,10 @@ body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, ve
   background-position: 0% 0%;
   background-repeat: no-repeat;
 }
-body.sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial4.png') no-repeat; background-position: top center;}
+.sementes #conteudo {
+  background: url('/wp-content/themes/sementeia-tema/images/sementes_topo.png') no-repeat;
+  background-position: 2.5% 0;
+}
 body.category-agenda{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial7.png') no-repeat; background-position: top center;}
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
 body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial5.png') no-repeat; background-position: top center;}
@@ -72,6 +111,7 @@ body .header-menu {
   position: relative;
   top:-160px;
   left: 192px;
+  margin: auto;
 }
 
 .header-paginas ul{
@@ -103,7 +143,7 @@ body.index .header-paginas ul li a.selected {
   width: 952px;
   min-height: 600px;
   position: relative;
-  top:90px;
+  top:-135px;
   border-bottom: 10px solid #000;
 }
 .circulo {
@@ -156,6 +196,7 @@ body.index .header-paginas ul li a.selected {
   width: auto;
   height: 1px;
   position: relative;
+  text-align: center;
 }
 
 .lW{
@@ -231,33 +272,37 @@ body.sementeia .content{
   width: 952px;
   height: auto;
   border-bottom: 10px solid #000;
-  margin-top: 20px;
 }
 
 body.sementeia .titulo{
   width: 452px;
-  margin-right: 50px;
   height: 32px ;
+  /*margin-right: 20px;*/
+  margin-top: -70px;
   background: url('images/bt_sementeia.png') no-repeat;
   background-size: 100px 32px;
+  float: left;
 }
 
 body.sementeia .circle-image {
-  position: absolute;
-  top:300px;
-  left:220px;
   width: 325px;
   height: 325px;
   border-radius: 50%;
   overflow: hidden;
+  margin: 20px 60px 0 100px;
+  float: left;
 }
 body.sementeia .conteudo-texto{
   width: 452px;
   text-align: justify;
-  margin-right: 50px;
-  margin-top: 50px;
+  float: left;
+  /*margin-right: 20px;*/
+  /*margin-top: 60px;*/
 }
 
+.clear {
+  clear: both;
+}
 .footer{
   width:952px;
   height: auto;
@@ -284,8 +329,13 @@ body.resistencia .header-paginas ul li a.selected {
 
 body.resistencia .content{
   width: 952px;
+  position: relative;
+  top: -80px;
 }
 
+.resistencia .conteudo {
+  margin-left: 200px;
+}
 body.resistencia .titulo{
   width:650px;
   height: 35px;
@@ -294,16 +344,9 @@ body.resistencia .titulo{
 }
 body.resistencia .conteudo-texto{
   width:550px;
-  height: auto;
   text-align: left;
-}
-
-body.resistencia .conteudo-texto {
-  margin-top: 60px;
+  margin-top: 61px;
   width: 630px;
-}
-
-body.resistencia .conteudo-texto p{
 }
 
 /*SEMENTES*/
@@ -318,28 +361,32 @@ body.sementes .header-paginas ul li a.selected {
  border-top: 25px solid black;
 }
 body.sementes .content{
-  width: 952px;
-  height: ;
-  position: relative;
-  top:90px;
+  width: 980px;
+}
+
+body.sementes .circle-image {
+  width: 315px;
+  height: 315px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 122px;
 }
 
 body.sementes .conteudo-titulo{
   width:130px;
-  height: 40px;
+  height: 35px;
   background: url('images/bt_sementes.png') no-repeat;
   background-size: contain;
   position: relative;
-  top:75px;
-  left:-250px;
+  top: -390px;
+  left: 196px;
 }
 
 body.sementes .conteudo-texto{
-  width:563px;
+  width:550px;
   height: auto;
-  position: relative;
-  top:-70px;
-  left:-35px;
+  margin-left: 200px;
+  margin-bottom: 30px;
 }
 
 body.sementes .conteudo-texto p{
@@ -348,22 +395,9 @@ body.sementes .conteudo-texto p{
   padding: 10px 0px;
 }
 
-body.sementes .circle-image {
-  position: relative;
-  top:-95px;
-  left: -220px;
-  width: 315px;
-  height: 315px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 body.sementes .conteudo-categorias{
-  width: 175px;
+  width: 275px;
   height: auto;
-  position: absolute;
-  top:187px;
-  right:0px;
   float: right;
 }
 
@@ -376,24 +410,15 @@ body.sementes .conteudo-categorias a{
 body.categorias-sementes .category-div .circle-description {
   display:none;
 }
-/*
-body.sementes .category-div .circle-description {
-  display:none;
-  position: relative;
-  left: -150px;
-  top: -50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: black;
-  color: white;
-} testando abaixo com position absolute e deu certo*/
 
+body.sementes .category-div {
+  position: relative;
+}
 body.sementes .category-div .circle-description {
   display:none;
   position: absolute;
-  left: -210px;
-  top: -120px;
+  left: -285px;
+  top: -85px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -401,6 +426,9 @@ body.sementes .category-div .circle-description {
   color: white;
 }
 
+body.sementes .category-div .circle-description .circulo-align {
+  padding-top: 20px;
+}
 body.sementes .category-div:hover .circle-description {
   display: block;
 }
@@ -413,9 +441,7 @@ body.sementes .conteudo-categorias .category-div {
 body.sementes .footer{
   width:952px;
   border-top: 8px solid black;
-  position: relative;
   padding-top: 10px;
-  top:135px;
 
 }
 

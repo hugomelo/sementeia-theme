@@ -74,3 +74,4 @@ elseif (!is_category("agenda")&&is_tag()){
 			</div> <!--fim do header-menu-->
 		</div><!--fim do header-content-->
 	</div><!--fim do header-->
+<div class=clear></div>
