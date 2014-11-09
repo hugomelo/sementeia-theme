@@ -33,22 +33,10 @@
 
 		<div class="conteudo-texto">
 			<?php
-				if(is_page('sementeia') || is_page('contato') || is_page('sementes')) {
-					if (have_posts()) {
-						while (have_posts()) {
-							the_post();
-							the_content();
-						}
-					}
-				}
-				else if(is_page('movimentos-de-resistencia')){
-					if (have_posts()) {
-						while (have_posts()) {
-							the_post();
-							echo'<div class="movimentos-resistencia-texto">';
-								the_content();
-							echo'</div>';
-						}
+				if (have_posts()) {
+					while (have_posts()) {
+						the_post();
+						the_content();
 					}
 				}
 			?>	

@@ -284,46 +284,26 @@ body.resistencia .header-paginas ul li a.selected {
 
 body.resistencia .content{
   width: 952px;
-  position: relative;
-  top:90px;
 }
 
-body.resistencia .conteudo-titulo{
-  width:300px;
+body.resistencia .titulo{
+  width:650px;
   height: 35px;
   background: url('images/bt_mov_resis_titulo.png') no-repeat;
   background-size: contain;
-  position: relative;
-  top:72px;
-  left:-165px;
 }
 body.resistencia .conteudo-texto{
-  width:563px;
+  width:550px;
   height: auto;
-  position: relative;
-  top:-85px;
-  left:-35px;
+  text-align: left;
 }
 
-body.resistencia .conteudo-texto{
-
-width: 630px;
-
+body.resistencia .conteudo-texto {
+  margin-top: 60px;
+  width: 630px;
 }
-
-body.resistencia .movimentos-resistencia-texto{
-position: relative;
-top:-20px;
-float: left;
-width: 630px;
-
-}
-
 
 body.resistencia .conteudo-texto p{
-  height: auto;
-  text-align: justify;
-  padding: 10px 0px;
 }
 
 /*SEMENTES*/
