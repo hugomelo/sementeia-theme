@@ -66,7 +66,10 @@ body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, ve
   background-position: 2.5% 0;
 }
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
-body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial5.png') no-repeat; background-position: top center;}
+body.categorias-sementes{
+  background: url('/wp-content/themes/sementeia-tema/images/sementes_pg2_embaixo.png') no-repeat;
+  background-position: bottom center;
+}
 body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 
 
@@ -412,25 +415,22 @@ body.sementes .conteudo-texto p{
 .conteudo-categorias{
   width: 275px;
   float: right;
+  text-align: right;
 }
 
-body.sementes .conteudo-categorias a{
+body.sementes .conteudo-categorias a, body.categorias-sementes .conteudo-categorias a{
   font-size: 13px;
   text-transform: uppercase;
-
 }
 
-body.categorias-sementes .category-div .circle-description {
-  display:none;
-}
-
-body.sementes .category-div {
+body.sementes .category-div, body.categorias-sementes .category-div {
   position: relative;
 }
-body.sementes .category-div .circle-description {
+
+body.sementes .category-div .circle-description,body.categorias-sementes .category-div .circle-description {
   display:none;
   position: absolute;
-  left: -285px;
+  left: -170px;
   top: -85px;
   width: 180px;
   height: 180px;
@@ -439,16 +439,15 @@ body.sementes .category-div .circle-description {
   color: white;
 }
 
-body.sementes .category-div .circle-description .circulo-align {
+body.sementes .category-div .circle-description .circulo-align, body.categorias-sementes .category-div .circle-description .circulo-align {
   padding-top: 20px;
 }
-body.sementes .category-div:hover .circle-description {
+body.sementes .category-div:hover .circle-description, body.categorias-sementes .category-div:hover .circle-description {
   display: block;
 }
 
-body.sementes .conteudo-categorias .category-div {
+body.sementes .conteudo-categorias .category-div, body.categorias-sementes .conteudo-categorias .category-div {
   height: 30px;
-  float: right;
 }
 
 body.sementes .footer{
@@ -496,6 +495,7 @@ body.archive .conteudo-postagem{
   position: relative;
   top:-20px;
   left:200px;
+  padding-bottom: 180px
 }
 
 
@@ -549,7 +549,7 @@ body.archive .sidebar li{
 
 body.categorias-sementes .conteudo-categorias{
   position: relative;
-  top:-50px;
+  top:-90px;
   right:0px;
   text-align: right;
 }
@@ -764,22 +764,19 @@ body.single .conteudo-titulo-post{
 body.single .post-title{
   position: relative;
   left: 0px;
+  font-size: 26px;
 }
 
 body.single .dados-postagem{
-
+  font-size: 13px;
 }
 
 body.single .date{
-  position: relative;
-  top: 0px;
-  left: 425px;
+  float: right;
 }
 body.single .author {
-  position: relative;
-  top: 0px;
-  left:0px;
-
+  font-size: 13px;
+  float: left;
 }
 
 body.single .conteudo-postagem{
@@ -787,22 +784,19 @@ body.single .conteudo-postagem{
   height: 800px;
   text-align: justify;
   position: relative;
-  top:0px;
-  left: 0px;
-}
-
-body.single .post{
-  float: left;
-  margin-top: -205px;
+  top:-170px;
+  left: 197px;
 }
 
 body.single .conteudo-postagem p{
   text-align: justify;
-
   margin-top: 15px;
 
 }
 
+body.single .conteudo-postagem iframe {
+  margin: 20px 0;
+}
 body.single .conteudo-postagem img{
   display: block;
   margin-left: auto;

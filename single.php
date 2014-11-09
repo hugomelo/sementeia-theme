@@ -30,6 +30,7 @@
 		
 		</div>
 		
+		<div class=clear></div>
 		<div class="conteudo-postagem">
 			<div class="post">
 			<?php
