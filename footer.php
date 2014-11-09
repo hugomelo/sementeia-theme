@@ -2,9 +2,7 @@
 
 </div><!-- fim do content-->
 <div class="footer">
-	 
 	<div class="footer-content">
-		
 		<?php wp_tag_cloud( '
 			smallest=10&
 			largest=40&
@@ -14,7 +12,6 @@
 			unit=px'
 		 	); 
 		 ?>
-	
 	</div> <!-- fim do footer-content-->
 </div><!--fim do footer-->
 </body>

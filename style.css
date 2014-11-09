@@ -65,11 +65,9 @@ body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, ve
   background: url('/wp-content/themes/sementeia-tema/images/sementes_topo.png') no-repeat;
   background-position: 2.5% 0;
 }
-body.category-agenda{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial7.png') no-repeat; background-position: top center;}
 body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
 body.categorias-sementes{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial5.png') no-repeat; background-position: top center;}
 body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
-body.archive{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
 
 
 img.back_esq, img.back_dir {
@@ -77,9 +75,17 @@ img.back_esq, img.back_dir {
 }
 img.back_esq { top: 50%; left: 0; }
 img.back_dir { top: 75%; right: 0; }
-.resistencia img.back_dir { bottom: 0; top: auto}
+.resistencia img.back_dir { top: 100%; }
+.sementes img.back_dir    { top: 100%; }
 
-a{ text-decoration: none; color: black;}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
 
 #conteudo{
   width: 1024px;
@@ -96,6 +102,9 @@ a{ text-decoration: none; color: black;}
   padding-top: 36px;
 }
 
+#hearder-logo a {
+  background-color: white;
+}
 #header .header-login{
   width: 50px;
   height: 25px;
@@ -127,14 +136,19 @@ body .header-menu {
 }
 
 .header-paginas ul li a {
-  text-decoration: none;
   display: block;
   position: relative;
   height: auto;
   border-top: 20px solid transparent;
   padding: 16px 0px 0px 0px;
+ border-bottom: 5px solid white;
 
 }
+.header-paginas ul li a:hover {
+ border-bottom: 5px solid black;
+ background-color: white;
+}
+
 body.index .header-paginas ul li a.selected {
  border-top: 20px solid black;
 }
@@ -360,7 +374,7 @@ body.sementes .header-paginas ul li a {
 body.sementes .header-paginas ul li a.selected {
  border-top: 25px solid black;
 }
-body.sementes .content{
+body.sementes .content, body.categorias-sementes .content {
   width: 980px;
 }
 
@@ -395,9 +409,8 @@ body.sementes .conteudo-texto p{
   padding: 10px 0px;
 }
 
-body.sementes .conteudo-categorias{
+.conteudo-categorias{
   width: 275px;
-  height: auto;
   float: right;
 }
 
@@ -456,58 +469,33 @@ body.categorias-sementes .header-paginas ul li a.selected {
  border-top: 25px solid black;
 }
 
-body.categorias-sementes .content{
-  width:1024px;
-  height: auto;
-
-}
-body.categorias-sementes .conteudo-titulo{
-  width:750px;
-  height: 70px;
-  position: relative;
-  top:-93px;
-  left:160px;
-  float: left;
-}
 body.categorias-sementes .titulo{
-float: left;
-position: relative;
-height: 50px;
-width: auto;
-top: -70px;
-left:200px;
-}
-
-
-
-body.categorias-sementes .titulo p{
-  font-size: 20px;
-
+  float: left;
+  position: relative;
+  height: 50px;
+  width: auto;
+  top: -80px;
+  left:200px;
+  text-transform: uppercase;
+  font-size: 26px;
 }
 
 body.categorias-sementes .conteudo-texto{
   position: relative;
-  top:0px;
-  left: -115px;
+  top:-50px;
+  left: 200px;
   width:390px;
-  height: auto;
   text-align: justify;
 
-}
-
-body.categorias-sementes .conteudo-texto p{
-  height: 0px;
-  position: relative;
-  top:0px;
 }
 
 body.archive .conteudo-postagem{
   float: left;
-  width:631px;
+  width:390px;
   text-align: justify;
   position: relative;
-  top:150px;
-  left:0px;
+  top:-20px;
+  left:200px;
 }
 
 
@@ -519,32 +507,17 @@ body.categorias-sementes .conteudo-postagem ul {
   list-style: none;
 }
 
-body.categorias-sementes .conteudo-postagem ul li{
-  padding: 20px 0px 0px 0px;
-}
-
 body.categorias-sementes .conteudo-postagem ul li a{
   text-decoration: none;
 
 }
 
 body.categorias-sementes .conteudo-postagem .tags{
-  font-size: 13px;
+  font-size: 11px;
+  padding-bottom: 20px;
 }
 
 /*SIDEBAR*/
-
-body.archive .category-div {
-  height: 30px;
-  float: right;
-}
-
-body.archive .sidebar{
-      position: absolute;
-      top: 267px;
-      left: 38px;
-
-}
 
 body.archive .sidebar li{
   text-decoration: none;
@@ -575,12 +548,10 @@ body.archive .sidebar li{
 }
 
 body.categorias-sementes .conteudo-categorias{
-  width: 175px;
-  height: auto;
   position: relative;
-  top:276px;
-  right:-388px;
-
+  top:-50px;
+  right:0px;
+  text-align: right;
 }
 
 
@@ -610,15 +581,10 @@ body.category-agenda .content{
   width:1024px;
 }
 body.category-agenda .conteudo{
-  width:560px;
-  margin: 0 auto;
-  margin: 80px 0px 0px 0px;
-  float: left;
+  width:550px;
 }
 body.category-agenda .conteudo-titulo{
   width:180px;
-  float: left;
-  margin: 0px 0px 0px 55px;
 }
 body.category-singe .titulo-agenda-post{
   font-size: 14px;
@@ -629,16 +595,23 @@ body.category-agenda .titulo{
   height: 40px;
   background: url('images/bt_agenda.png')
   no-repeat; background-size: contain;
-  float: left;
   position: relative;
-  top:-70px;
-  left: 235px;
+  top:-87px;
+  left: 197px;
 }
+
+body.category-agenda .conteudo-texto{
+  position: relative;
+  top:-50px;
+  left: 197px;
+  width:390px;
+  text-align: justify;
+
+}
+
 body.category-agenda .conteudo-postagem{
   width:630px;
   height:auto;
-  float: left;
-  margin: -150px 0px 0px 60px;
   text-align: justify;
 }
 body.category-agenda .conteudo-postagem li{
@@ -647,7 +620,8 @@ body.category-agenda .conteudo-postagem li{
   margin: 30px 0px;
 }
 body.category-agenda .conteudo-postagem a {
-  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
 }
 body.category-agenda .conteudo-postagem p {
   padding-bottom: 10px;
@@ -657,17 +631,14 @@ body.category-agenda .conteudo-postagem img{
   margin-left: auto;
   margin-right: auto
 }
-body.category-agenda .conteudo-postagem a {
- color: black;
-}
 body.category-agenda .conteudo-postagem a.active{
  border-bottom: 10px solid black;
   margin-bottom: 10px;
 }
 body.category-agenda .conteudo-postagem div.body{
- color: black; overflow: hidden;
+ overflow: hidden;
  line-height: 20px; height: 60px;
- margin-bottom: 20px;
+ margin-bottom: 40px;
  transition: height 1s ease;
  -webkit-transition: height 1s ease;
  -moz-transition: height 1s ease;
@@ -688,12 +659,16 @@ body.contato .header-paginas ul li a.selected {
  border-top: 25px solid black;
 }
 
+body.contato .conteudo {
+  margin-left: 360px;
+}
+
 body.contato .conteudo-titulo{
   width:310px;
   height: 50px;
   position: relative;
-  top:160px;
-  left:170px;
+  top:-85px;
+  left:235px;
 
 }
 body.contato .titulo {
@@ -703,16 +678,17 @@ body.contato .titulo {
   background-size: contain;
  }
 body.contato .conteudo-texto p{
-  margin: 40px 5px;
+  margin-bottom: 40px;
   text-align: justify;
 }
 body.contato .conteudo-texto{
   position: relative;
-  top:-10px;
+  top:-30px;
   left:235px;
   width:310px;
   border-bottom: 8px solid;
   border-bottom-color: #000;
+  padding-bottom: 60px;
 }
 
 /*TAGS*/
@@ -765,16 +741,6 @@ body.tag .conteudo-postagem img{
   padding: 50px 0px;
 }
 
-
-/*ARCHIVE*/
-body.archive .conteudo-categorias{
-  width: 175px;
-  height: auto;
-  position: relative;
-  top:10px;
-  right:-380px;
-
-}
 
 /*SINGLE*/
 

@@ -22,7 +22,7 @@ elseif(is_category("agenda"))
 	$class = "agenda";
 elseif(is_page('sementes'))
 	$class ="sementes";
-elseif (!is_category("agenda")&&is_tag()){
+else {
 	$class ="categorias-sementes";
 }
 
@@ -54,7 +54,7 @@ elseif (!is_category("agenda")&&is_tag()){
 						<li><a  <?php if ($class == "resistencia") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('movimentos de resistencia'));?>"> 
 						<img src="<?php bloginfo('template_url')?>/images/bt_mov_resis.png"/></a></li>
 						
-						<li><a  <?php if ($class == "sementes") echo $c; ?> href="<?php echo get_permalink(get_page_by_title('sementes'));?>"> 
+						<li><a  <?php if ($class == "sementes" || $class == 'categorias-sementes') echo $c; ?> href="<?php echo get_permalink(get_page_by_title('sementes'));?>"> 
 						<img src="<?php bloginfo('template_url')?>/images/bt_sementes.png" /></a></li>
 										
 						<?php
