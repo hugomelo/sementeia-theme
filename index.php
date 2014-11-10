@@ -63,6 +63,9 @@
 				</div>
 			</div><!--fim do content-agenda-->
 		
+		<div class=credits>
+			<?php echo $attachments[$k[$n]]->post_excerpt; ?>
+		</div> 
 		</div> 
 
 </div><!--fim do container-->

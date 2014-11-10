@@ -26,19 +26,25 @@ if(is_page('sementes')): ?>
 		<?php 
 			if(is_page('sementeia')||is_page('sementes')){
 
-					echo "<div class=".'"circle-image"'.">";
+					$attachments = get_children( array('post_parent' => get_the_ID(), 'post_type' => 'attachment', 'post_mime_type' =>'image') );
+					if (empty($attachments)) {
 						$p = get_page_by_path('circle-images','ARRAY_A');
-						$attachments = get_children( array('post_parent' => $p['ID'],
-						'post_type' => 'attachment', 'post_mime_type' =>'image') );
-						$n = rand(0,count($attachments)-1);
-						$k = array_keys($attachments);
-						$url = wp_get_attachment_url( $attachments[$k[$n]]->ID);
-					
-						printf ('<img src="%s"/>',$url);
+						$attachments = get_children( array('post_parent' => $p['ID'], 'post_type' => 'attachment', 'post_mime_type' =>'image') );
+					}
 
-				echo "</div>";
+					$n = rand(0,count($attachments)-1);
+					$k = array_keys($attachments);
+					$url = wp_get_attachment_url( $attachments[$k[$n]]->ID);
+
+					echo "<div class=".'"circle-image"'.">";
+					echo "<a href='$url'>";
+					printf ('<img src="%s"/>',$url);
+					echo "</a></div>";
 			}
 		?>
+					<div class=credits>
+						<?php if (isset($attachments)) echo $attachments[$k[$n]]->post_excerpt; ?>
+					</div>
 				
 		<div class="conteudo-titulo"> <div class="titulo"> </div> </div>
 

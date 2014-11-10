@@ -47,6 +47,21 @@ html {
 
 body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%;}
 
+.credits {
+ position: absolute;
+  font-size: 12px;
+}
+.index .credits {
+  bottom: 0;
+}
+.sementes .credits {
+  top:600px;
+  left: 252px;
+}
+.sementeia .credits {
+  top:630px;
+  left: 252px;
+}
 #conteudo, .footer {
   margin: 0 auto;
 }
