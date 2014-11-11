@@ -77,15 +77,15 @@ body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, ve
   background-repeat: no-repeat;
 }
 .sementes #conteudo {
-  background: url('/wp-content/themes/sementeia-tema/images/sementes_topo.png') no-repeat;
+  background: url('images/sementes_topo.png') no-repeat;
   background-position: 2.5% 0;
 }
-body.contato{background: url('/wp-content/themes/sementeia-tema/images/background_sementeial8.png') no-repeat; background-position: top center;}
+.contato #conteudo{background: url('images/contato.png') no-repeat; background-position: 0 110px; min-height: 700px}
 body.categorias-sementes{
-  background: url('/wp-content/themes/sementeia-tema/images/sementes_pg2_embaixo.png') no-repeat;
+  background: url('images/sementes_pg2_embaixo.png') no-repeat;
   background-position: bottom center;
 }
-body.single {background: url('/wp-content/themes/sementeia-tema/images/background_sementeial2.png') no-repeat; background-position: top center;}
+body.single {background: url('images/background_sementeial2.png') no-repeat; background-position: top center;}
 
 
 img.back_esq, img.back_dir {
@@ -669,7 +669,6 @@ body.agenda .conteudo-postagem div.body.active {
 body.contato .header-paginas ul li a {
   border-top: 25px solid transparent;
   padding: 11px 0px 0px 0px;
-
 }
 body.contato .header-paginas ul li a.selected {
  border-top: 25px solid black;
@@ -684,7 +683,7 @@ body.contato .conteudo-titulo{
   height: 50px;
   position: relative;
   top:-85px;
-  left:235px;
+  left:245px;
 
 }
 body.contato .titulo {
@@ -700,7 +699,7 @@ body.contato .conteudo-texto p{
 body.contato .conteudo-texto{
   position: relative;
   top:-30px;
-  left:235px;
+  left:245px;
   width:310px;
   border-bottom: 8px solid;
   border-bottom-color: #000;
