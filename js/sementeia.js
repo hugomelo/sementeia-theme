@@ -28,7 +28,7 @@ window.onload = function() {
 
     });
 
-    jQuery('body.agenda .conteudo-postagem a').on('click', openEvent );
+    jQuery('body.agenda .conteudo-postagem a.title').on('click', openEvent );
 };
 
 
