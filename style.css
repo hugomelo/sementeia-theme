@@ -817,6 +817,9 @@ body.single .conteudo-postagem{
   left: 197px;
 }
 
+body.single .conteudo-postagem .post {
+  padding-bottom: 20px;
+}
 body.single .conteudo-postagem p{
   text-align: justify;
   margin-top: 15px;
