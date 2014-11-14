@@ -14,7 +14,7 @@
 					$author = get_the_author();
 					if(!in_category('agenda')){
 						echo '<div class="dados-postagem">';
-						echo '<span class="author">';echo 'Autor: '.$author;echo'</span>';	
+						echo '<span class="author">';echo 'Parceiro: '.$author;echo'</span>';	
 						echo '<span class="date">';the_time('d/m/Y');echo'</span>';
 						echo '</div>';	
 					}
