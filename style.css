@@ -171,7 +171,7 @@ body .header-menu {
 }
 .header-paginas ul li a:hover {
  border-bottom: 5px solid black;
- background-color: white;
+ background-color: initial;
 }
 
 body.index .header-paginas ul li a.selected {
