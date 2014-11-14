@@ -843,3 +843,24 @@ body.single .conteudo-postagem img{
   margin-right: auto;
   padding: 45px 0px;
 }
+
+.breath {
+  margin-bottom: 100px;
+}
+.entry-meta {
+  margin-bottom: 15px;
+}
+.conteudo-imagem {
+  position: relative;
+  top:-50px;
+  left: 200px;
+  width:724px;
+  text-align: justify;
+}
+
+.image-navigation .nav-previous {
+  float: left;
+}
+.image-navigation .nav-next {
+  float: right;
+}
