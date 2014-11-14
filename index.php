@@ -7,7 +7,8 @@
 	$attachments = get_children( array('post_parent' => $p['ID'], 'post_type' => 'attachment', 'post_mime_type' =>'image') );
 	$n = rand(0,count($attachments)-1);
 	$k = array_keys($attachments);
-	$imageUrl = wp_get_attachment_url( $attachments[$k[$n]]->ID);
+	$imageUrl = wp_get_attachment_image_src($attachments[$k[$n]]->ID, 'medium');
+	$imageLink = get_attachment_link($attachments[$k[$n]]->ID);
 
 	// pega os titulos dos posts em destaque para os circulos
 	$args=array('posts_per_page'=>2, 'tag' => 'destaque', 'order' => 'ASC');
@@ -44,7 +45,9 @@
 			</div><!--fim do circulo-direita-->
 
 			<div class="circle-image">
-				<img src="<?php echo $imageUrl; ?>" /> 				
+				<a href="<?php echo $imageLink; ?>">
+					<img src="<?php echo $imageUrl[0]; ?>" />
+				</a>
 			</div>
 
 			

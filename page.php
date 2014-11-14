@@ -34,12 +34,16 @@ if(is_page('sementes')): ?>
 
 					$n = rand(0,count($attachments)-1);
 					$k = array_keys($attachments);
-					$url = wp_get_attachment_url( $attachments[$k[$n]]->ID);
+					$imageUrl = wp_get_attachment_image_src($attachments[$k[$n]]->ID, 'medium');
+					$imageLink = get_attachment_link($attachments[$k[$n]]->ID);
 
-					echo "<div class=".'"circle-image"'.">";
-					echo "<a href='$url'>";
-					printf ('<img src="%s"/>',$url);
-					echo "</a></div>";
+			?>
+			<div class="circle-image">
+				<a href="<?php echo $imageLink; ?>">
+					<img src="<?php echo $imageUrl[0]; ?>" />
+				</a>
+			</div>
+				<?php
 			}
 		?>
 					<div class=credits>

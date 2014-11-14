@@ -48,19 +48,23 @@ html {
 body{ background: white; font-family: 'Open Sans', sans-serif, arial, tahoma, verdana; width: 100%;}
 
 .credits {
- position: absolute;
   font-size: 12px;
 }
 .index .credits {
+  position: absolute;
   bottom: 0;
 }
 .sementes .credits {
-  top:580px;
-  left: 252px;
+  margin-left: 100px;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
 }
 .sementeia .credits {
-  top:630px;
-  left: 252px;
+  position: absolute;
+  top:560px;
+  left: 235px;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
 }
 #conteudo, .footer {
   margin: 0 auto;
@@ -150,7 +154,7 @@ body .header-menu {
 .header-paginas ul li{
   float: left;
   position: relative;
-  padding-left: 45px;
+  padding-left: 35px;
 }
 
 .header-paginas ul li a {
@@ -160,7 +164,10 @@ body .header-menu {
   border-top: 20px solid transparent;
   padding: 16px 0px 0px 0px;
  border-bottom: 5px solid white;
+}
 
+.header-paginas ul li a img {
+  height: 19px;
 }
 .header-paginas ul li a:hover {
  border-bottom: 5px solid black;
