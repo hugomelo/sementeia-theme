@@ -27,10 +27,14 @@
 					echo'">';
 					echo "<span>".the_title()."</span>";
 					echo "</a></li>";
-					if(function_exists('the_tags'))
-						echo '<div class="tags">';
-					the_tags('');
-					echo '</div>'; ?>
+					echo '<div class="tags">';
+						the_tags('');
+					echo '</div>';
+					$author = get_the_author();
+					echo '<div class="dados-postagem">';
+						echo '<span class="author">';echo 'Parceiro: '.$author;echo'</span>';	
+						echo '<span class="date">';the_time('d/m/Y');echo'</span>';
+					echo '</div>'; ?>	
 					<div class=clear></div>
 				<?php endwhile; ?>
 		
@@ -40,10 +44,10 @@
 			<!-- then the pagination links -->
 		<nav class=post-navigation>
 			<div class=nav-previous>
-				<?php previous_posts_link( 'anteriores' ); ?>
+			<?php next_posts_link( 'anteriores', $wp_query ->max_num_pages); ?>
 			</div>
 			<div class=nav-next>
-			<?php next_posts_link( 'posteriores', $wp_query ->max_num_pages); ?>
+				<?php previous_posts_link( 'posteriores' ); ?>
 			</div>
 		</nav>
 		<div class=breath></div>

@@ -882,3 +882,19 @@ body.single .conteudo-postagem img{
   left: 120px;
   top: -20px;
 }
+.categorias-sementes.todos .conteudo .dados-postagem {
+  font-size: 13px;
+  height: 35px;
+}
+
+.categorias-sementes.todos .conteudo .tags{
+  clear: both;
+  padding-bottom: 0px;
+}
+.categorias-sementes.todos .conteudo .dados-postagem .date{
+  float: right;
+}
+.categorias-sementes.todos .conteudo .dados-postagem .author {
+  float: left;
+}
+
