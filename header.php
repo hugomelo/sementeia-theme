@@ -18,6 +18,8 @@ elseif(is_page('contato'))
  	$class="contato";
 elseif(is_page('movimentos-de-resistencia'))
 	$class="resistencia";
+elseif(is_page('todos-os-posts'))
+	$class="categorias-sementes todos";
 elseif(is_category("agenda"))
 	$class = "agenda";
 elseif(is_page('sementes'))

@@ -1,5 +1,6 @@
 
 <?php get_header(); ?>
+	
 <?php if(is_page('movimentos-de-resistencia')): ?>	
 	<img class=back_esq src=/wp-content/themes/sementeia-tema/images/mov_resis_esq.png />
 	<img class=back_dir src=/wp-content/themes/sementeia-tema/images/mov_resis_dir.png />

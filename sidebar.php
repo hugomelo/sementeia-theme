@@ -20,6 +20,10 @@ foreach($cats as $cat) {
 	<?php }
 	 echo "</div>";
 	}
+
+ echo "<div class=category-div>";
+    echo "<a href=\"/todos-os-posts\">Todos os posts</a>";
+ echo "</div>";
 	?> 
 
 

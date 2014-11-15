@@ -845,7 +845,7 @@ body.single .conteudo-postagem img{
 }
 
 .breath {
-  margin-bottom: 150px;
+  margin-bottom: 190px;
 }
 .entry-meta {
   margin-bottom: 15px;
@@ -863,4 +863,22 @@ body.single .conteudo-postagem img{
 }
 .image-navigation .nav-next {
   float: right;
+}
+.post-navigation .nav-previous {
+  float: left;
+}
+.post-navigation .nav-next {
+  float: right;
+}
+.categorias-sementes.todos .conteudo {
+  float: left;
+}
+.categorias-sementes.todos .conteudo .conteudo-postagem, .post-navigation {
+  margin-left: 120px;
+  width: 500px;
+}
+.categorias-sementes.todos .conteudo .titulo {
+  position: relative;
+  left: 120px;
+  top: -20px;
 }
