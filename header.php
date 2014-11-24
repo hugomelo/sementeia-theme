@@ -17,8 +17,8 @@ clicky_site_ids.push(100791911);
 	( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
 	 })();
 </script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100791911ns.gif" /></p></noscript> )
-})
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100791911ns.gif" /></p></noscript>
+
 </head>
 
 <?php
