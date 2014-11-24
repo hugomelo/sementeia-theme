@@ -199,8 +199,7 @@ body.index .header-paginas ul li a.selected {
 
 
 
-.circulo-align span{
-  font-size: 20px;
+.circulo-align span.novidade{
 }
 
 #circulo-direita, #circulo-esquerda{
@@ -378,7 +377,7 @@ body.resistencia .content{
 body.resistencia .titulo{
   width:650px;
   height: 35px;
-  background: url('images/bt_mov_resis_titulo.png') no-repeat;
+  background: url('images/bt_mov_resis.png') no-repeat;
   background-size: contain;
 }
 body.resistencia .conteudo-texto{
