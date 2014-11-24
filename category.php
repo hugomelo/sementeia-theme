@@ -1,4 +1,8 @@
 
+<?php
+if (!defined('DS'))
+	define("DS",'/');
+?>
 
 <?php get_header();
 ?>
