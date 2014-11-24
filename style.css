@@ -626,7 +626,7 @@ body.category-agenda .titulo{
 body.category-agenda .conteudo-texto{
   position: relative;
   top:-50px;
-  left: 197px;
+  left: 203px;
   width:630px;
   text-align: justify;
 
@@ -647,13 +647,14 @@ body.category-agenda .conteudo-postagem a.title:hover {
   color: white;
 }
 body.category-agenda .conteudo-postagem a.title {
-  background-color: #fda;
+  background-color: rgba(13,166,105,0.4);
   color: black;
   margin-bottom: 10px;
   font-size: 18px;
   padding: 5px;
   border-radius: 10px;
   display: block;
+  margin-left: -5px;
 }
 body.category-agenda .conteudo-postagem img{
   display: block;
