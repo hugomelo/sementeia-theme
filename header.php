@@ -52,13 +52,6 @@ else {
 				<img src="<?php bloginfo('template_url')?>/images/sementeia-logo.png" /></a>		
 			</div> <!--fim do header-logo-->
 
-			<div class="header-content-login">
-				<a href="/"></a>			
-				<?php if($class=='index'): ?>
-					<a  class="header-login" href="<?php echo wp_login_url(); ?>" title="Login"> </a>			
-				<?php endif ?>
-			</div><!--fim do header-content-login-->
-					
 			<?php $c="class=selected"; ?>
 			<div class="header-menu">
 				<div class="header-paginas">

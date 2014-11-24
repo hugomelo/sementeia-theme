@@ -127,14 +127,13 @@ a:hover {
 #hearder-logo a {
   background-color: white;
 }
-#header .header-login{
+a.header-login{
   width: 50px;
   height: 25px;
   background: url('images/bt_login.png') no-repeat;
-  float: right;
-  position: relative;
-  top:-151px;
-  right: 0px;
+  position: absolute;
+  bottom:0;
+  right: -4px;
 }
 
 body .header-menu {

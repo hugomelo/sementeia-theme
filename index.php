@@ -69,6 +69,7 @@
 		<div class=credits>
 			<?php echo $attachments[$k[$n]]->post_excerpt; ?>
 		</div> 
-		</div> 
 
+		<a  class="header-login" href="<?php echo wp_login_url(); ?>" title="Login"> </a>			
+	</div> 
 </div><!--fim do container-->
