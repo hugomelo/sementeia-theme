@@ -11,7 +11,7 @@
 	$imageLink = get_attachment_link($attachments[$k[$n]]->ID);
 
 	// pega os titulos dos posts em destaque para os circulos
-	$args=array('posts_per_page'=>2, 'tag' => 'destaque', 'order' => 'ASC');
+	$args=array('posts_per_page'=>2, 'tag' => 'destaque', 'order' => 'DESC');
 	$wp_query = new WP_Query( $args );
 	$destaques = array();
 	while(have_posts()) {
