@@ -55,13 +55,13 @@
 				<img src="/wp-content/themes/sementeia-tema/images/bt_agenda.png" id="titulo-home-agenda">
 				<div id="content-agenda-home">
 					<ul>
-						<li>
 							<?php query_posts('showposts=4&category_name=agenda');?>
 							<?php if (have_posts()): while (have_posts()) : the_post();?>
+						<li>
 							<?php echo '<a href="'.get_permalink().'" >'.the_title('','',false).'</a>'; ?>
+						</li>
 							<?php endwhile; else:?>
 							<?php endif;?>
-						</li>
 					</ul>
 				</div>
 			</div><!--fim do content-agenda-->
