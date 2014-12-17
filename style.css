@@ -830,7 +830,6 @@ body .conteudo-postagem .post a:hover {
 }
 body .conteudo-postagem .post a {
   color: #FFAB14;
-  display: table;
 }
 body.single .conteudo-postagem iframe {
   margin: 20px 0;
