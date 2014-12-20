@@ -2,6 +2,7 @@
 <html <?php language_attributes() ?> >
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
+	<link rel="shortcut icon" href="/wp-content/themes/sementeia-tema/images/sementeia-logo_teia.png">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<?php wp_head();?>
 	<script type="text/javascript" src="<?php bloginfo('template_url')?>/js/sementeia.js"></script>
