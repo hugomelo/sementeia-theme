@@ -925,12 +925,15 @@ form[role=search].search-form {
   position: absolute;
   right: 0;
   bottom: 50px;
-  border: 2px solid #aca;
 }
 
 form[role=search].search-form input[type=search] {
   width: 130px;
   height: 30px;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 form[role=search].search-form input[type=search]:focus {
   width: 250px;
