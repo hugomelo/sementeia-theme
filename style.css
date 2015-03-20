@@ -899,3 +899,44 @@ body.single .conteudo-postagem img{
   float: left;
 }
 
+.search-results #primary.content-area {
+  float: left;
+  width: 75%;
+}
+.search-results .sidebar {
+  float: right;
+  width: 20%;
+  margin-top:10px;
+}
+.search-results .footer {
+  margin-top: 80px;
+  clear: both;
+}
+.search-results .page-header h1 {
+  margin-bottom: 15px;
+}
+.screen-reader-text {
+  position: absolute;
+  left: -999em;
+}
+
+/* Search widget */
+form[role=search].search-form {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  border: 2px solid #aca;
+}
+
+form[role=search].search-form input[type=search] {
+  width: 130px;
+  height: 30px;
+}
+form[role=search].search-form input[type=search]:focus {
+  width: 250px;
+  transition: 0.3s
+}
+.search-form .search-submit {
+	display: none;
+}
+

@@ -1,5 +1,6 @@
 </div> <!--conteudo-->
 
+<div class=clear></div>
 </div><!-- fim do content-->
 <div class="footer">
 	<div class="footer-content">

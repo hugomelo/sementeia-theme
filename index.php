@@ -70,6 +70,7 @@
 			<?php echo $attachments[$k[$n]]->post_excerpt; ?>
 		</div> 
 
+		<?php get_search_form(); ?>
 		<a  class="header-login" href="<?php echo wp_login_url(); ?>" title="Login"> </a>			
 	</div> 
 </div><!--fim do container-->
